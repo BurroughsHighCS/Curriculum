@@ -13,7 +13,7 @@ The above names have some slight connotation differences, but for the purposes o
 As you become a more experienced software developer, you will learn that writing code is one of the easiest aspects of writing software. One of the most difficult skills is to setup and manage your software's _environment_. The terminal is one of many tools you will need to manage software environments.
 
 ## Searching for Answers
-As a Software Developer, I often find myself struggling with incredibly specific problems or errors. One of the most valuable skills I learned in my studies was what some people call "Google-fu", or the fine art of googling specific problems using deliberately chosen key words. You are likely already skilled in "Goole-fu", but I guarantee you will find your skills more lacking than you expect when you try to google search software development issues.
+As a Software Developer, I often find myself struggling with incredibly specific problems or errors. One of the most valuable skills I learned in my studies was what some people call "Google-fu", or the fine art of googling specific problems using deliberately chosen key words. You are likely already skilled in "Google-fu", but I guarantee you will find your skills more lacking than you expect when you try to google search software development issues.
 
 On an average work day, I still spend the vast majority of my time searching google for solutions that relate even slightly to my coding and environment issues.
 
