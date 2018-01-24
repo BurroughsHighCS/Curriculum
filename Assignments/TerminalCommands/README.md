@@ -1,7 +1,7 @@
 # Terminal Commands (Hello World)
 The terminal is a barebones control interface to navigate file systems and execute software programs.
 
-[![Terminal](./Terminal.png)]
+![Terminal](./Terminal.png)
 
 While "Terminal" is the most common term used for this tool, other common names for the tool are:
 * Command Line
