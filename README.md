@@ -51,15 +51,14 @@ Each assignment will be worth 2 Coins and will be graded as an all-or-nothing gr
 
 The order and details of the assignments listed below are subject to change:
 
-* Hello World
-* Terminal Commands
-* Binary
+* Terminal Commands (Hello World)
 * Manual Code Output
-* Google Search
+* Git Commands
+* Iteration
 * Variable Scoping
 * Nested Functions
+* Binary
 * Memory
-* Iteration
 * Sorting
 * Class Diagram
 * Inheritance
@@ -67,6 +66,7 @@ The order and details of the assignments listed below are subject to change:
 * Boundary Case Identification
 * Unit Test Cases
 * Ethics
+* TBD Assignment
 * TBD Assignment
 * TBD Assignment
 
@@ -99,6 +99,8 @@ While assignments are open to group work, please do not copy the work of others.
 In addition to the existing school policies, any student exhibiting inappropriate behavior in class is subject to immediate coin deductions based on the severity of the infraction.
 
 I will tolerate no sexually inappropriate, offensive, or discriminatory behavior of any kind in my classroom.
+
+Do not attempt to "hack" or otherwise abuse our school machines.
 
 Additionally, I will deduct coins and invalidate assignment scores from students who abuse their digital footprint by:
 * Submitting code with inappropriate variable names or otherwise inappropriate content.
