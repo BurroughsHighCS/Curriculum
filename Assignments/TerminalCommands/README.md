@@ -1,6 +1,8 @@
 # Terminal Commands (Hello World)
 The terminal is a barebones control interface to navigate file systems and execute software programs.
 
+[![Terminal](./Terminal.png)]
+
 While "Terminal" is the most common term used for this tool, other common names for the tool are:
 * Command Line
 * Bash
@@ -73,4 +75,4 @@ In this class, I will often not give you specific instructions how to complete t
 ```
     java Hello
 ```
-16. If in class, show your completed work to me. If not in class, take a screenshot of your terminal window showing as much of your command history as possible. I will have you upload this to a space for me to pass it off later.
+16. If in class, show your completed work to me. If not in class, take a screenshot (Alt + PrintScrn) of your terminal window showing as much of your command history as possible. I will have you upload this to a space for me to pass it off later.
