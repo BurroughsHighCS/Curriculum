@@ -68,9 +68,9 @@ In this class, I will often not give you specific instructions how to complete t
     * The javac command runs your specified java file through a compiling process which will change it from human-readable code to machine readable "bytecode".
 14. The Hello.class file is the same small program you wrote, but now it's in bytecode. Try displaying its contents in your terminal and comparing them to the original java file.
 15. Now try running your program:
+    * It should just say "Hello World" by itself, now.
+    * Congratulations on your first program!
 ```
     java Hello
 ```
-    * It should just say "Hello World" by itself, now.
-    * Congratulations on your first program!
 16. If in class, show your completed work to me. If not in class, take a screenshot of your terminal window showing as much of your command history as possible. I will have you upload this to a space for me to pass it off later.
