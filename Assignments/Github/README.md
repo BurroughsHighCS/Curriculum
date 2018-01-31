@@ -77,7 +77,6 @@ In this first exercise, you will create your first Git repository, you will add 
 8. Lets move our Hello World application into our new repository. Go find it on the desktop and move it to your repository folder.
 
 9. Once the file is moved, type ```git status``` into your terminal. You should see some colored messages about some "Untracked files":
-
 ![Untracked files](./UntrackedFiles.png)
 
 10. Before Git will upload these new files to the repository, we have to "stage" them to be added using the "Git add" command.
