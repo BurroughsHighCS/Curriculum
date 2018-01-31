@@ -13,12 +13,6 @@ Redundancy is only one benefit of storing your data in Github's cloud. Github al
 
 To handle this code syncing, Github uses a software call "Git" (Git_hub_ is just a collection of "Git" repositories). Git is a content tracking software that makes these "pushes" and "pulls" efficiently.
 
-## An Odd Fact from Programming History
-The original description of Git when it was first released was a bit odd:
-```
-Git Description
-```
-
 ## Terms and Commands
 ### Terminology
 * Git
