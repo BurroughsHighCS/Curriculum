@@ -32,6 +32,7 @@ To handle this code syncing, Github uses a software call "Git" (Git_hub_ is just
 * git push origin master
 * git clone <url>
 * git pull origin master
+* git reset --hard
 
 ## Exercise 1
 In this first exercise, you will create your first Git repository, you will add code to the repository, and then you will push and pull that code up and down through the cloud using the commands listed above.
