@@ -28,6 +28,8 @@ To handle this code syncing, Github uses a software call "Git" (Git_hub_ is just
 * Push
 * Pull
 * Clone
+* Local
+* Remote
 
 ### Commands
 * git add -A
@@ -37,6 +39,7 @@ To handle this code syncing, Github uses a software call "Git" (Git_hub_ is just
 * git clone <url>
 * git pull origin master
 * git reset --hard
+* git checkout -b
 
 ## Exercise 1 <a name="Exercise1"></a>
 In this first exercise, you will create your first Git repository, you will add code to the repository, and then you will push and pull that code up and down through the cloud using the commands listed above.
@@ -106,4 +109,12 @@ In this first exercise, you will create your first Git repository, you will add 
 
 ## Exercise 2 <a name="Exercise2"></a>
 
+Now that you have a repository and you know how to push to it, you need to also learn how to pull from it.
 
+1. Once you verify that your github repository has all of your code, delete the local version of that code.
+    * In case you're unfamiliar, "local" means anything specific to the physical machine you're using. "Remote" would be the files and other stuff saved up in the cloud.
+    * You should delete the _whole_ folder at the point where it has been initialized to the git repository. (i.e. - I would delete the whole "MerrellAPCS" folder on my machine).
+
+2. Now that you don't have any of your local code, open up your repository on Github and find the green "Clone or download" button near the top right of the page.
+
+3. Clicking 
