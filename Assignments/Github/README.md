@@ -117,4 +117,4 @@ Now that you have a repository and you know how to push to it, you need to also 
 
 2. Now that you don't have any of your local code, open up your repository on Github and find the green "Clone or download" button near the top right of the page.
 
-3. Clicking the
+3. Clicking the button
