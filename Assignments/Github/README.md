@@ -1,6 +1,10 @@
 # Github
 Github serves many purposes. Since most of those purpose don't have any immediate connection to the AP exam, however, we won't discuss them in the scope of this class. For this class, we will use Github primarily as a tool for redundancy and change tracking.
 
+This assignment has two exercises, but you should read the context just below here before beginning the assignments:
+[Exercise 1](#Exercise1)
+[Exercise 2](#Exercise2)
+
 ## Redundancy
 Have you ever accidentally deleted a crucial file or had your hard drive die on you? It happens to anyone and everyone at some point.
 
@@ -98,5 +102,8 @@ In this first exercise, you will create your first Git repository, you will add 
     * Don't worry about the 'origin master' part for now. That will just be part of all of our push statements from now on (there's more, but not part of this class).
 
 14. Congratulations! Now if you reload your github repository, you should see that your Hello World files are inside it.
+
+
+## Exercise 2
 
 
