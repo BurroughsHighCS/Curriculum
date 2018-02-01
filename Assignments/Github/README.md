@@ -2,8 +2,8 @@
 Github serves many purposes. Since most of those purpose don't have any immediate connection to the AP exam, however, we won't discuss them in the scope of this class. For this class, we will use Github primarily as a tool for redundancy and change tracking.
 
 This assignment has two exercises, but you should read the context just below here before beginning the assignments:
-[Exercise 1](#Exercise1)
-[Exercise 2](#Exercise2)
+* [Exercise 1](#Exercise1)
+* [Exercise 2](#Exercise2)
 
 ## Redundancy
 Have you ever accidentally deleted a crucial file or had your hard drive die on you? It happens to anyone and everyone at some point.
@@ -38,7 +38,7 @@ To handle this code syncing, Github uses a software call "Git" (Git_hub_ is just
 * git pull origin master
 * git reset --hard
 
-## Exercise 1
+## Exercise 1 <a name="Exercise1"></a>
 In this first exercise, you will create your first Git repository, you will add code to the repository, and then you will push and pull that code up and down through the cloud using the commands listed above.
 
 1. Create a Github account if you don't already have one, then log into it.
@@ -104,6 +104,6 @@ In this first exercise, you will create your first Git repository, you will add 
 14. Congratulations! Now if you reload your github repository, you should see that your Hello World files are inside it.
 
 
-## Exercise 2
+## Exercise 2 <a name="Exercise2"></a>
 
 
