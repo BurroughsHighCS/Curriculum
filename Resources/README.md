@@ -9,10 +9,12 @@ Visual Studio Code is a text editor that will let you work in a selected project
 
 ### Git Bash (Git Source Control Manager)
 Git bash is a terminal that has git commands built into it. It's useful for keeping our code up to date with our cloud repositories. It also generally works better than the default windows terminal (called cmd).
+
 [Download Page](https://git-scm.com/downloads)
 
 ### Notepad++
 This one is optional. It's another text editor like Visual Studio Code, but it only supports opening single files. You can't open a whole folder. It's nice when you just want to make quick changes to a single file, but for projects, Visual Studio Code will be better.
+
 [Download Link](https://notepad-plus-plus.org/)
 
 ### Java Development Kit (JDK version 8)
