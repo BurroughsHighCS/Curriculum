@@ -115,6 +115,32 @@ Now that you have a repository and you know how to push to it, you need to also 
     * In case you're unfamiliar, "local" means anything specific to the physical machine you're using. "Remote" would be the files and other stuff saved up in the cloud.
     * You should delete the _whole_ folder at the point where it has been initialized to the git repository. (i.e. - I would delete the whole "MerrellAPCS" folder on my machine).
 
-2. Now that you don't have any of your local code, open up your repository on Github and find the green "Clone or download" button near the top right of the page.
+2. Now that you don't have any of your local code, open up your repository on Github and find the green "Clone or download" button near the top right of the page. Clicking the button will bring up a menu:
+    ![Clone Menu](./Clone.png)
 
-3. Clicking the button
+3. From this menu, copy the ```https://``` url.
+    * Make sure that you have a url beginning with ```https://``` and not ```ssh```. Ssh urls use stronger security measures, but require some complicated configuration. Https urls will be sufficient for now.
+
+4. In your terminal, navigate to the folder where your code used to be (For me this was the "Code" folder). Once at the correct folder, run a ```git clone``` command:
+```git clone YOUR_URL```
+For me the command was
+```git clone https://github.com/csmerrell/MerrellAPCS.git```
+
+5. Type ls into your terminal window to see that it recreated your repository. If you cd into the folder you will see that all of the files from your repository have been cloned into it. 
+    * When you run clone, note that it does not turn your _current_ folder into the git repository. It creates a _new_ folder that is a clone of the repository.
+
+6. Now that you have cloned your repository, you can work on your code from any computer, anywhere. Any time you find yourself needing to work on your project from a new computer, just clone the repository to the new computer.
+
+7. Once you have your code spread across multiple computers, it is important to make sure that you keep them in sync with each other.
+    * The best strategy to keep all of your work in sync is to:
+    * ```git pull origin master``` every time you start working on any machine
+    * ```git push origin master``` any time you are done working on any machine
+        * Remember that every push command first requires a ```git add``` and a ```git commit``` command.
+
+8. To practice this habit, open another terminal and create a new folder somewhere else called "School" or "Home" to represent the _other_ location where you might need to work on your code.
+
+9. Navigate your second terminal into this "School" or "Home" folder and clone your repository here. You should have two versions of your repository on your one computer, now.
+    * These two folders don't know about each other's existence. Each one of them is connected to the Github repository, though, so we can sync them.
+
+10. In your original repository, make some sort of changes.
+    * i.e. - Add another print statement to Hello.java, or add a description of your folder to the README.md file.
