@@ -43,7 +43,7 @@ This one is the most important. We need the JDK in order to compile and run our 
     * Mac users:
         * I can't test this personally to be sure, but the steps should be very similar to the Windows steps, except you start in the "Applications" folder instead of the "Program Files" folder.
 
-4. With this filepath copied, follow the instructions for your Operating System [Here](https://www.java.com/en/download/help/path.xml) to add this folder to your Windows PATH.
+4. With this filepath copied, follow the instructions for your Operating System [Here](https://www.java.com/en/download/help/path.xml) to add this folder to your OS PATH.
 
 Once you have the JDK added to your PATH, close your terminal window and open a new one. Try compiling and running a [Hello World](https://github.com/BurroughsHighCS/Curriculum/tree/master/Assignments/TerminalCommands) program in your terminal to verify that the PATH was configured correctly. If you can't use the ```java``` and ```javac``` commands without their absolute paths, you will have to troubleshoot your PATH configuration until it works.
 
