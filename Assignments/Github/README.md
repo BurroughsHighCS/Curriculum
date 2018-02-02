@@ -148,7 +148,7 @@ For me the command was
 11. Push these changes up to the Github repository
     * Remember that a push consists of 3 steps
         1. ```git add -A```
-        2. ```git commit m "YOUR MESSAGE"```
+        2. ```git commit -m "YOUR MESSAGE"```
         3. ```git push origin master```
 
 12. Once your changes have been pushed up into the Github repository, go to the terminal for your "alternate location" (Home or School folder).
