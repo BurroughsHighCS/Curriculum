@@ -24,14 +24,14 @@ This one is the most important. We need the JDK in order to compile and run our 
     * This link will have multiple versions. If you're on a Mac, just select the MacOS download. If you're on a Windows Operating System you want the one that is either Windows x86 (If your computer is 32 bit), or Windows x64 (If your computer is 64 bit). If you don't know whether your computer is 64 bit or 32 bit, just try the 64 bit (x64) version first. If it doesn't work, download and install the 32 bit (x86) version.
 
 2. Once Java is installed, you will need to add it to your Operating System's PATH, otherwise you'll have to type all of your commands with absolute paths, like
-```
-C:/Program\ Files\ \\(x86\\)/Java/jdk1.8.0_161/bin/javac Hello.java
-```
-Instead of
-```
-javac Hello.java
-```
-Trust me, it's worth the effort to figure out how to add the jdk to your OS's PATH.
+    ```
+    C:/Program\ Files\ \\(x86\\)/Java/jdk1.8.0_161/bin/javac Hello.java
+    ```
+    Instead of
+    ```
+    javac Hello.java
+    ```
+    Trust me, it's worth the effort to figure out how to add the jdk to your OS's PATH.
 
 3. First, find the jdk install on your computer.
     * Windows users:
