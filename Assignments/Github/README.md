@@ -143,4 +143,20 @@ For me the command was
     * These two folders don't know about each other's existence. Each one of them is connected to the Github repository, though, so we can sync them.
 
 10. In your original repository, make some sort of changes.
-    * i.e. - Add another print statement to Hello.java, or add a description of your folder to the README.md file.
+    * i.e. - Add another print statement to Hello.java, or add a description of your repository to the README.md file.
+
+11. Push these changes up to the Github repository
+    * Remember that a push consists of 3 steps
+        1. ```git add -A```
+        2. ```git commit m "YOUR MESSAGE"```
+        3. ```git push origin master```
+
+12. Once your changes have been pushed up into the Github repository, go to the terminal for your "alternate location" (Home or School folder).
+
+13. Here, run the command
+    ```
+    git pull origin master
+    ```
+    * This should pull whatever changes you made to your code into the alternate location. Verify that the changes got pulled down properly.
+
+14. For familiarization, now make some changes in the alternate location, then push them up and pull them down to the original folder.
