@@ -15,7 +15,7 @@ String firstName = "Curt";
 String lastName = "Merrell";
 ```
 
-Simply put, a **string** is any line of text, or a "string" of text. Strings don't have to be multiple words, though. We can also write
+Simply put, a **string** is any line of text, or a "string" of text. Strings don't have to be individual words, though. We can also write
 
 ```java
 String fullName = "Curt Merrell";
