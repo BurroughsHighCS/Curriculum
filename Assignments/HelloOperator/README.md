@@ -128,7 +128,7 @@ Before you read about these, you should try this exercise and just see how every
     * Make "targetSavingsGoal" and "savingsPerMonth" variables, and see how many months it will take to reach your goal.
     * Pick 15 random words and assign them to String variables, then print out 3 or more random sentences using various combinations of those words.
     * Make "loanAmount", "interestRate", and "loanPaybackPeriod"(months) variables. Use these to calculate an "interestPerMonth" variable, then calculate how much money your loan will cost you.
-    * Make "hasGirlfriend" (or boyfriend), "hasMoney", and "hasJob" as Boolean variables. Write an if tree that will print:
+    * Make "hasGirlfriend" (or boyfriend), "hasMoney", and "hasJob" as Boolean variables. Write an if-else tree that will print:
         * "Success!" if you have an SO
         * "You can do it!" if you have a either a job or money.
         * Otherwise, print a proud single life statement.
