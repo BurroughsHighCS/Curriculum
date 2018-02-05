@@ -117,10 +117,10 @@ Before you read about these, you should try this exercise and just see how every
             }
         }
         if(currentSavings < 500) {
-            System.out.println("You should be saving more money.")
+            System.out.println("You should be saving more money.");
         }
         else {
-            System.out.println("Do you need to save more money, still?")
+            System.out.println("Do you need to save more money, still?");
         }
     ```
 
