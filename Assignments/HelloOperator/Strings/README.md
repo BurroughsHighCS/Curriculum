@@ -100,6 +100,3 @@ System.out.println(Curt); //This throws an error. We tried to tell it to print t
 ```
 
 This covers the basics of Strings for now. There are other nuances to working with strings, but for now this this get you started.
-
-
-```
