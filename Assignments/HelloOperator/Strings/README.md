@@ -9,9 +9,7 @@
 * Variable
 * Literal
 
-The first three terms listed here, **String**, **Integer (int)**, and **Double**, all reference data types. Look at them one at a time:
-
-### String
+## Examples & Explanations
 ```Java
 String firstName = "Curt";
 String lastName = "Merrell";
