@@ -88,8 +88,8 @@ Before you read about these, you should try this exercise and just see how every
 
         double bitcoinsWorth = bitcoinsOwned * bitcoinValue;
         double bcsCoinsWorth = bcsCoinsOwned * bcsCoinValue;
-        System.out.println("My current bitcoins are worth " + bitcoinsWorth);
-        System.out.println("My current BCSCoins are worth " + bcsCoinsWorth);
+        System.out.println("My current bitcoins are worth $" + bitcoinsWorth);
+        System.out.println("My current BCSCoins are worth $" + bcsCoinsWorth);
 
         //Let's assume I can get it so you can redeem 25 BCSCoins for a $5 giftcard.
         double reward = 5;
