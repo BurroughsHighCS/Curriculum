@@ -34,7 +34,7 @@ You can perform some basic mathematical operations on integers using the followi
     System.out.println(ten / 2); //5
 ```
 
-All of these operations will print what you would expect to (what's shown in the comment at the end of each line). But here's an odd one:
+All of these operations will print what you would expect them to (what's shown in the comment at the end of each line). But here's an odd one:
 
 ```java
     int ten = 10;
