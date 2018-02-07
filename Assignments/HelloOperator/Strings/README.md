@@ -1,4 +1,4 @@
-# Working with Strings
+# Strings
 
 ## Terminology
 * String

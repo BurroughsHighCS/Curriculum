@@ -4,9 +4,8 @@ We're going to start diving into the basics of the Java programming language, an
 ## Reference Articles
 
 * [Strings](./Strings)
-* Integers (Still not done)
-* Doubles (Still not done)
-* Booleans, Conditionals, & Logicals (Still not done)
+* [Integers & Doubles](./Integers&Doubles)
+* [Booleans Logic] (./BooleanLogic)
 
 ## Exercise
 Before you read about these, you should try this exercise and just see how everything works in practice.
