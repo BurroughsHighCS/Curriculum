@@ -159,14 +159,18 @@ Some tips:
 
 * Information about scanners can be found here: [Scanners](./Scanner.md);
 * Information about try/catch statements can be found here: [Try/Catch](./TryCatch.md);
+* The Scanner class has a ```nextInt()``` function and a ```nextDouble()``` function that work similarly to the ```nextLine()``` function from my demo code.
 * For the boolean validator, the user should be able to enter "t", "f", "T", "F", "true", "True", "false", "False";
 * The ```==``` operator actually doesn't work for Strings the way you expect it to, so:
-    ```java
-        String s = scan.nextLine();
-        return s == "t";
-    ```
-    Will not work. You will need to call the string's ```Equals(String str)``` function.
-    ```java
-        String s = scan.nextLine();
-        return s.equals("t");
-    ```
+    
+```java
+    String s = scan.nextLine();
+    return s == "t";
+```
+    
+Will not work. You will need to call the string's ```Equals(String str)``` function.
+    
+```java
+    String s = scan.nextLine();
+    return s.equals("t");
+```
