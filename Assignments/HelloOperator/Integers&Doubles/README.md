@@ -144,11 +144,11 @@ There are some special mathematical operators. First, you can combine any of the
 
 Each of these operators serves as a shorthand for a longer operation. Let's assume that we have ```int x = 1;```:
 
-```x += 1;``` Is equivalent to: ```x = x + 1;``` - Reassign ```x``` to be the result of ```x + 1```
-```x -= 1;``` Is equivalent to: ```x = x - 1;``` - Reassign ```x``` to be the result of ```x - 1```
-```x *= 2;``` Is equivalent to: ```x = x * 2;``` - Reassign ```x``` to be the result of ```x * 2```
-```x /= 2;``` Is equivalent to: ```x = x / 2;``` - Reassign ```x``` to be the result of ```x / 2```
-```x %= 2;``` Is equivalent to: ```x = x % 1;``` - Reassign ```x``` to be the result of ```x % 2```
+* ```x += 1;``` Is equivalent to: ```x = x + 1;``` - Reassign ```x``` to be the result of ```x + 1```
+* ```x -= 1;``` Is equivalent to: ```x = x - 1;``` - Reassign ```x``` to be the result of ```x - 1```
+* ```x *= 2;``` Is equivalent to: ```x = x * 2;``` - Reassign ```x``` to be the result of ```x * 2```
+* ```x /= 2;``` Is equivalent to: ```x = x / 2;``` - Reassign ```x``` to be the result of ```x / 2```
+* ```x %= 2;``` Is equivalent to: ```x = x % 1;``` - Reassign ```x``` to be the result of ```x % 2```
 
 There are two more special operators you will use alot:
 
@@ -157,5 +157,5 @@ There are two more special operators you will use alot:
 
 Assuming we have ```int x = 1;``` again:
 
-```x++``` Is equivalent to: ```x += 1``` Which is also equivalent to ```x = x + 1```
-```x--``` Is equivalent to: ```x -= 1``` Which is also equivalent to ```x = x - 1```
+* ```x++``` Is equivalent to: ```x += 1``` Which is also equivalent to ```x = x + 1```
+* ```x--``` Is equivalent to: ```x -= 1``` Which is also equivalent to ```x = x - 1```
