@@ -153,7 +153,12 @@ class ValidationUtils {
 }
 ```
 
-You can feel free to copy this code as your starting point. From here, I want you to write similar validator functions for the three remaining data types: ```int```, ```double```, and ```Boolean```.
+You can feel free to copy this code as your starting point. From here, I want you to write similar validator functions for the three remaining data types: ```int```, ```double```, and ```Boolean```. The main function of your ValidationUtils class should do ALL of the following:
+* Prompt the user to enter a string, then print whether the value provided was a valid string or not.
+* Prompt the user to enter a int, then print whether the value provided was a valid int or not.
+* Prompt the user to enter a double, then print whether the value provided was a valid double or not.
+* Prompt the user to enter a boolean, then print whether the value provided was a valid boolean or not.
+
 
 Some tips:
 
