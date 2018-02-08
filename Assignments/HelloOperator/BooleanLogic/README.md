@@ -132,4 +132,4 @@ Alternatively, if you look again at the first snippet of wallet code:
     }
 ```
 
-You can note that _none_ of these conditionals are ```else if``` conditionals. It is possible (and even likely) that _many_ of these conditions are true, in which case _all_ of the true statements will execute. This makes sense, because most of these print statements are not exclusive actions, but just statements of non-exclusive facts. Being bale to afford to fast food doesn't mean that the money in my wallet _isn't_ divisible by 5 or by 2. Likewise, if I have $10, $20, $30... in my wallet, these amounts are divisible by both 2 AND 5.
+You can note that _none_ of these conditionals are ```else if``` conditionals. It is possible (and even likely) that _many_ of these conditions are true, in which case _all_ of the true statements will execute. This makes sense, because most of these print statements are not exclusive actions, but just statements of non-exclusive facts. Being able to afford fast food doesn't mean that the money in my wallet _isn't_ divisible by 5 or by 2. Likewise, if I have $10, $20, $30... in my wallet, these amounts are divisible by both 2 AND 5.
