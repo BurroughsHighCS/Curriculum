@@ -123,7 +123,7 @@ Because we've extracted ```isEven``` into a function, we can use it for any inte
 Remember that our function declared its parameter as ```int x```, but we passed it a bunch of integers with different variable names. This is another strength of writing functions. No matter what you name the variable, once you pass it to the function, the function considers it ```x``` within its own **scope**. We will talk more about variable scope in a later assignment, but for now understand that functions can use whatever name they want for their parameters.
 
 ## Exercise
-We're working toward our first big project, a loan calculator. In our loan calculator, we will need to be able to accept inputs from users. This comes with a number of possible problems, as users frequently mistype inputs or misunderstand desired input formats. The practice of cleaning, validating, and parsing user inputs is a pretty big topic that we won't dive too deep into, but we can at least write a **Utility Class** that does some basic input validation for us. Look at the below ```Validators``` class with an example String input validator function ```isValidString```
+We're working toward our first big project, a loan calculator. In our loan calculator, we will need to be able to accept inputs from users. This comes with a number of possible problems, as users frequently mistype inputs or misunderstand desired input formats. The practice of cleaning, validating, and parsing user inputs is a pretty big topic that we won't dive too deep into, but we can at least write a **Utility Class** that does some basic input validation for us. Look at the below ```ValidationUtils``` class with an example String input validator function ```isValidString```
 
 ```java
 import java.util.Scanner;
