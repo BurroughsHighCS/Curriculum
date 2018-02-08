@@ -106,3 +106,10 @@ Additionally, I will deduct coins and invalidate assignment scores from students
 * Submitting code with inappropriate variable names or otherwise inappropriate content.
 * Posting inappropriate content of any kind to github.
 * Exhibiting behaviors deemed otherwise inappropriate online.
+
+
+##Contact Information
+If you need to reach me, the best way to do so is at my Navy email address:
+Curtis.merrell@navy.mil
+
+Please attach screenshots of the errors you encounter, or copy and paste them into the email so I can better attempt to diagnose issues.
