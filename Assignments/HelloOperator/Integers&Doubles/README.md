@@ -148,7 +148,7 @@ Each of these operators serves as a shorthand for a longer operation. Let's assu
 * ```x -= 1;``` Is equivalent to: ```x = x - 1;``` - Reassign ```x``` to be the result of ```x - 1```
 * ```x *= 2;``` Is equivalent to: ```x = x * 2;``` - Reassign ```x``` to be the result of ```x * 2```
 * ```x /= 2;``` Is equivalent to: ```x = x / 2;``` - Reassign ```x``` to be the result of ```x / 2```
-* ```x %= 2;``` Is equivalent to: ```x = x % 1;``` - Reassign ```x``` to be the result of ```x % 2```
+* ```x %= 2;``` Is equivalent to: ```x = x % 2;``` - Reassign ```x``` to be the result of ```x % 2```
 
 There are two more special operators you will use alot:
 
