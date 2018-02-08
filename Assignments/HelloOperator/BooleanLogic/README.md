@@ -45,7 +45,7 @@ The most common use case of Booleans is in what we call **Conditionals**:
     }
 ```
 
-Above is an example of a series of conditional statements. By toggling the top three Boolean variables between ```true``` and ```false```, our program will execute different print statements based on our conditions. Using the Booleans as provided above, it will hit the first print statement, ```System.out.println("Your electric bill is high.");```. Can you figure out how to the necessary conditions to reach each of the possible outcomes?
+Above is an example of a series of conditional statements. By toggling the top three Boolean variables between ```true``` and ```false```, our program will execute different print statements based on our conditions. Using the Booleans as provided above, it will hit the first print statement, ```System.out.println("Your electric bill is high.");```. Can you figure out the necessary conditions to reach each of the possible outcomes?
 
 ### Logical Operators
 Boolean variables aren't the only conditions that can be placed inside of conditional statements. There are many **Logical Operators** the return ```true``` and ```false``` values:
