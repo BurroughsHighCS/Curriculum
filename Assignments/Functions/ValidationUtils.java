@@ -10,7 +10,6 @@ class ValidationUtils {
         else {
             System.out.println("String Failure!");
         }
-
     }
 
     
@@ -19,13 +18,13 @@ class ValidationUtils {
             String s = scan.nextLine();
         }
         catch(Exception e) {
-            return false;
+            return false; //An error was raised. The user input could not be read as a String.
         }
-        return true;
+        return true; //No error was raised. The scanner read it successfully as a String.
     }
 
-    public static Boolean isValidBoolean(Scanner scan) {
+    public static Boolean isValidBool(Scanner scan) {
         String s = scan.nextLine();
-        return s.charAt(0) == 't' || s.charAt(0) == 'f' || s.charAt(0) == 'F' || s.charAt(0) == 'T';
+        return s.toLowerCase().equals("t") || s.toLowerCase().equals("f");
     }
 }

@@ -126,5 +126,47 @@ Remember that our function declared its parameter as ```int x```, but we passed 
 We're working toward our first big project, a loan calculator. In our loan calculator, we will need to be able to accept inputs from users. This comes with a number of possible problems, as users frequently mistype inputs or misunderstand desired input formats. The practice of cleaning, validating, and parsing user inputs is a pretty big topic that we won't dive too deep into, but we can at least write a **Utility Class** that does some basic input validation for us. Look at the below ```Validators``` class with an example String input validator function ```isValidString```
 
 ```java
+import java.util.Scanner;
 
+class ValidationUtils {
+    public static void main(String args[]) {
+        System.out.print("Enter a string: ");
+        Scanner scan = new Scanner(System.in);
+        if(isValidString(scan)) {
+            System.out.println("String Success!");
+        }
+        else {
+            System.out.println("String Failure!");
+        }
+    }
+
+    
+    public static Boolean isValidString(Scanner scan) {
+        try {
+            String s = scan.nextLine();
+        }
+        catch(Exception e) {
+            return false; //An error was raised. The user input could not be read as a String.
+        }
+        return true; //No error was raised. The scanner read it successfully as a String.
+    }
+}
 ```
+
+You can feel free to copy this code as your starting point. From here, I want you to write similar validator functions for the three remaining data types: ```int```, ```double```, and ```Boolean```.
+
+Some tips:
+
+* Information about scanners can be found here: [Scanners](./Scanner.md);
+* Information about try/catch statements can be found here: [Try/Catch](./TryCatch.md);
+* For the boolean validator, the user should be able to enter "t", "f", "T", "F", "true", "True", "false", "False";
+* The ```==``` operator actually doesn't work for Strings the way you expect it to, so:
+    ```java
+        String s = scan.nextLine();
+        return s == "t";
+    ```
+    Will not work. You will need to call the string's ```Equals(String str)``` function.
+    ```java
+        String s = scan.nextLine();
+        return s.equals("t");
+    ```
