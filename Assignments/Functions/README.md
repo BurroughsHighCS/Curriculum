@@ -157,8 +157,8 @@ You can feel free to copy this code as your starting point. From here, I want yo
 
 Some tips:
 
-* Information about scanners can be found here: [Scanners](./Scanner.md);
-* Information about try/catch statements can be found here: [Try/Catch](./TryCatch.md);
+* Information about scanners can be found here: [Scanners](https://docs.oracle.com/javase/7/docs/api/java/util/Scanner.html)
+* Information about try/catch statements can be found here: [Try/Catch](https://beginnersbook.com/2013/04/try-catch-in-java/)
 * The Scanner class has a ```nextInt()``` function and a ```nextDouble()``` function that work similarly to the ```nextLine()``` function from my demo code.
 * For the boolean validator, the user should be able to enter "t", "f", "T", "F", "true", "True", "false", "False";
 * The ```==``` operator actually doesn't work for Strings the way you expect it to, so:
