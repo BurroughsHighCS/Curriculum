@@ -31,7 +31,7 @@ The most common use case of Booleans is in what we call **Conditionals**:
             System.out.println("Your electric bill is high.");
         }
         else if(haveSwampCooler) {
-            System.out.println("You electric bill isn't too bad.");
+            System.out.println("Your electric bill isn't too bad.");
             System.out.println("Your house gets humid.");
         }
         else {
