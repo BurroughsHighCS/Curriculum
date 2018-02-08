@@ -14,7 +14,7 @@ int myHSGradYear = currentYear + yearsUntilGraduation;
 System.out.println("I graduated High School in " + myHSGradYear); //Prints: I graduated High School in 2007
 ```
 
-An **Integer** is any **whole** number between -&#221E; and &#221E;. In Java, we can create integers using the **primitive** data type ```int```.
+An **Integer** is any **whole** number between -U+221E; and U+221E;. In Java, we can create integers using the **primitive** data type ```int```.
 
 ### Integer Math
 You can perform some basic mathematical operations on integers using the following mathematical operators:
