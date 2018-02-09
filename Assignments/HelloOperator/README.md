@@ -5,7 +5,7 @@ We're going to start diving into the basics of the Java programming language, an
 
 * [Strings](./Strings)
 * [Integers & Doubles](./Integers&Doubles)
-* [Booleans Logic] (./BooleanLogic)
+* [Boolean Logic](./BooleanLogic)
 
 ## Exercise
 Before you read about these, you should try this exercise and just see how everything works in practice.
@@ -126,7 +126,6 @@ Before you read about these, you should try this exercise and just see how every
 3. Now that you've run some of my provided code, let's see if you can make your own. Try writing more snippets to do the following:
     * Make "targetSavingsGoal" and "savingsPerMonth" variables, and see how many months it will take to reach your goal.
     * Pick 15 random words and assign them to String variables, then print out 3 or more random sentences using various combinations of those words.
-    * Make "loanAmount", "interestRate", and "loanPaybackPeriod"(months) variables. Use these to calculate an "interestPerMonth" variable, then calculate how much money your loan will cost you.
     * Make "hasGirlfriend" (or boyfriend), "hasMoney", and "hasJob" as Boolean variables. Write an if-else tree that will print:
         * "Success!" if you have an SO
         * "You can do it!" if you have a either a job or money.
