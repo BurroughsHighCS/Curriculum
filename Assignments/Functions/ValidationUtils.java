@@ -22,9 +22,4 @@ class ValidationUtils {
         }
         return true; //No error was raised. The scanner read it successfully as a String.
     }
-
-    public static Boolean isValidBool(Scanner scan) {
-        String s = scan.nextLine();
-        return s.toLowerCase().equals("t") || s.toLowerCase().equals("f");
-    }
 }
