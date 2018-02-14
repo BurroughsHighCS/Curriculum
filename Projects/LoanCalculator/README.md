@@ -94,14 +94,21 @@ The Compounding Interest (without payments) mode should print the following valu
 ### Compounding Interest With Payments
 In a typical compounding interest loan, you will make monthly payments against the outstanding balance which are also included in each consecutive month's interest calculation. By making these payments, you decrease the outstanding balance, which decreases the amount of interest you pay each month.
 
-Generally, the loan issuer will calculate a **minimum** monthly payment. The math for calculating the minimum monthly payment is more complex, so your program will instead calculate a **mildly aggressive** monthly payment. This means that your application will recommend a monthly payment that is _higher_ than the minimum, and if you pay this amount you will actually finish paying off your loan **earlier** than the scheduled term completion.
+Loan issuers will calculate a **minimum monthly payment** to pay off your loan within the specified term. The math to calculate this minimum payment is complex, so I will provide the exact code to calculate the monthly payments (You will need to change some variable names to match your own variable names):
 
-The formula that your application should use to calculate the monthly payment is as follows:
+```java
+double ratePerMonth = interestRate /12;
+double monthlyPayment = 1 + loanAmt * (ratePerMonth / (1 - Math.pow((1 + ratePerMonth), (loanTerm * -12))));
+```
+
+If you want to understand this calculation better, it follows the formula provided in method 2 at [this website](https://www.wikihow.com/Calculate-Loan-Payments):
 
 ```
-    //Monthly Payment formula (NOT VALID CODE)
-    //Where loanTotal is the total amount to be paid as calculated by your compoundingNoPayments function
-    monthlyPayment = loanTotal / (term * 12)
+The formula to use when calculating loan payments is M = P * ( J / (1 - (1 + J)^(-N))). Follow the steps below for a detailed guide to using this formula, or refer to this quick explanation of each variable:
+M = payment amount
+P = principal, meaning the amount of money borrowed
+J = effective interest rate. Note that this is usually not the annual interest rate; see below for an explanation.
+N = total number of payments
 ```
 
 Once a monthly payment has been calculated, the new interest computation should follow the formula:
@@ -118,8 +125,7 @@ The Compounding Interest (with payments) mode should print the following values 
 * Original Loan Amount
 * Loan Term
 * Interest Rate
-* Monthly Payment
-* Months required to pay off loan
+* Minimum Monthly Payment
 * Payment amount for the final month of the loan
     * (This should be less than the monthly payment amount, because you won't have the full amount remaining on your loan on the final month)
 * Interest to be paid
