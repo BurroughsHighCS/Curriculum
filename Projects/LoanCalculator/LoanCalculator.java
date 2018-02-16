@@ -26,7 +26,7 @@ public class LoanCalculator{
             flatInterest();
         }
         else {
-            System.out.println("Other modes not yet supported.") //Replace this with calls to your appropriate functions            
+            System.out.println("Other modes not yet supported."); //Replace this with calls to your appropriate functions            
         }
     }
 
