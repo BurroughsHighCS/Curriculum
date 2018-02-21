@@ -87,7 +87,7 @@ In a while loop, any ```Boolean``` value is a valid executing condition for a wh
 You should be ready to try our first looping [exercise](./Exercise1.md) to practice with While loops.
 
 ## For Loops
-While loops are relatively straightforward. You give it an executing condition, and it will execute until that condition is no longer true.
+While loops are relatively straightforward. You give it an executing condition and it will loop until that condition is no longer true.
 
 There is another loop that actually gets used more frequently than while loops, however, called a **For Loop**. Most loops actually follow a predefined pattern. Take our first loop, for example:
 
@@ -100,9 +100,7 @@ There is another loop that actually gets used more frequently than while loops, 
     }
 ```
 
-Every pass through our while loop, we perform the same operation on ```n```: ```n++```. It's almost as if the ```n++``` is _part_ of our condition. This loop could be described in English as: _Given that n starts at 1 and we increment n by 1 each pass through the loop_, print the new value of n each loop.
-
-This isn't just a loop that executes until ```n``` is greater than 10. It's a loop that also makes sure ```n``` eventually gets bigger than 10. We can communicate that better by writing the same loop as a **For Loop**:
+We can actually write this same loop as a **For Loop**:
 
 ```java
     for(int n = 1; n <= 10; n++) {
@@ -121,28 +119,64 @@ For loops take a 3-part condition statement:
 * An index mutation operation: ```n++```
     * The operation that should be performed to change the index on each pass through the loop.
 
-### Some Notes
-* We generally use the variable name ```i``` for the index of a for loop, but any variable name is acceptable:
-```java
-    for(int i = 0; i <= 10; i++) {
-        //...
-    }
-```
+### The Index
+We can change the index of a for loop:
 
-* The mutating operation of a for loop can be any mathematical-assignment operation:
 ```java
-    for(int i = 0; i < 10; i += 2) {
-        //Increments i by 2 each pass, so we get half the number of passes
+    for(int i = 5; i <= 10; i++) {
+        System.out.println(i);        
     }
+    //Only prints the integers 5 through 10
 ```
 
 ```java
-    for(int i = 1; i < 10; i *= 3) {
-        //Multiplies i by 3 each pass. 
-        //Loops for i values of 1, 3, and 9 
-        //Terminates on the 4th pass when i is 27.
+    for(int i = -100; i <= 10; i++) {
+        System.out.println(i);        
     }
+    //Prints the integers from -100 to 10
 ```
+
+### The Executing Condition
+Just like in a while loop, we can change the executing condition:
+
+```java
+    for(int i = 1; i < 100; i++) {
+        System.out.println(i);        
+    }
+    //Prints the numbers 1 through 99. DOES NOT print 100.
+```
+
+```java
+    for(int i = 1; i > 0; i++) {
+        System.out.println(i);        
+    }
+    //Loops forever. 
+    //i will never be less than or equal to 0
+    //It starts at 1 and keeps incrementing up
+```
+
+### The Mutating Operation
+We can modify the mutating operation. This controls how our index changes on each pass through the loop.
+
+```java
+    for(int i = 1; i < 10; i += 2) {
+        System.out.println(i);        
+    }
+    //prints every other number between 1 and 10
+    // 1, 3, 5, 7, 9
+```
+
+```java
+    for(int i = 1; i < 10; i *= 2) {
+        System.out.println(i);        
+    }
+    //prints the powers of 2 between 1 and 10
+    // 1, 2, 4, 8
+```
+
+
+### A Note
+* We generally use the variable name ```i``` for the index of a for loop, but any variable name is acceptable.
 
 ## [Exercise 2](./Exercise2.md)
 You should be ready for our second [exercise](./Exercise2.md) practicing with for loops.
