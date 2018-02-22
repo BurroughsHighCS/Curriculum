@@ -3,10 +3,10 @@
 1. Here are some example while loops. Read through them and see if you can understand what they will do before testing them. Write your prediction down. Once you've made predictions for all five, make a new java file and test them out to see if you were right:
 
 ```java
-    int n = 1;
+    int n = 0;
     while(n < 100) {
         System.out.println(n);
-        n *= 5;
+        n += 5;
     }
     //In particular, is the last thing printed what you expected?
 ```
