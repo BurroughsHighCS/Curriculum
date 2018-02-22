@@ -6,7 +6,7 @@
     int n = 0;
     while(n < 100) {
         System.out.println(n);
-        n *= 5;
+        n += 5;
     }
     //In particular, is the last thing printed what you expected?
 ```
