@@ -39,7 +39,7 @@ Note that this project is worth twice as many points as the Loan Calculator. Exp
     * You will need to use a random number to determine if the disc should shift left or right.
         * For help with random numbers, find the additional resources section at the bottom, or click [here](#RandomNumbers).
 
-3. At each row in single ball mode, the application should print out a visual representation of its row. After all the rows are complete, a the printout should look something like this:
+3. At each row in single disc mode, the application should print out a visual representation of its row. After all the rows are complete, a the printout should look something like this:
 
     ```
          . . . .O. . . .
