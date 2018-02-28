@@ -31,7 +31,7 @@ Note that this project is worth twice as many points as the Loan Calculator. Exp
         * If you look at the plinko board, you'll see that every alternating row has "half" positions. These will present a problem to you because the user is required to enter an integer value between 0 and 8. You can either:
             * Multiply the user input by 2, so inputs of 0,1,..,7,8 become inputs of 0,2,..,14,16.
                 * This lets you stay in the integer data type.
-            * Convert the integer input to a double.
+            * Or you can convert the integer input to a double.
                 * If you do this, each shift in the next step will be a position shift of .5 instead of 1.
         * There are boundaries to the Plinko board:
             * A disc cannot move left if it is in the leftmost position (0).
