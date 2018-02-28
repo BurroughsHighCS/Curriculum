@@ -61,9 +61,10 @@ Alter the code so the print statement works _as is_ (don't change or move the pr
 3. The following class tries to execute a "power" function to print the first ```n``` powers of 2, but it's incomplete. Finish the code to successfully run the power function:
 ```Java
 class Powers {
+    int n = 32;
+    int base = 2;
+
     public static void main(String[] args) {
-        int n = 32;
-        int base = 2;
         for(int i = 0; i <= n; i++) {
             power();
         }
