@@ -1,97 +1,154 @@
-# Scope
-Understanding the **Scope** of data is critical to being efficient at writing code. 
+# The Lifetime of Data
+The variables and other data that you use in your programs don't exist permanently unless you deliberately store them as permanent files, but some of your variables may survive longer than others. Let's try to better explain the lifetime of a variable.
 
 ## Terminology
-* Scope
 * Declaration
 * Definition
+* Null
 * Class Variable
 * Parameter
 
-## The Lifetime of Variables
+## Declaration vs. Definition
+We have talked about these two terms before, but it's important that we review them to make sure we really understand them:
+
+```java
+    int n = 1;
+```
+
+This code snippet **declares** AND **defines** the variable ```n```. We can rewrite this code to separate the two:
+
+```java
+    int n; //Declaration
+    n = 1; //Definition
+```
+
+The first line here **declares** the variable ```n```, but _does not_ give it a definition. Until a variable is defined, it has a **null** value until it is defined. In Java, all data begins its life as null (or empty, or void) until it is defined. 
+
+In this case, ```n``` is null until it is defined as the integer ```1``` in the following line ```n = 1;```. Note that in this second line, we _do not_ repeat ```n```'s type of ```int```. The ```int``` label is strictly part of the declaration. Any time data is declared in Java, it must be assigned a **data type**. 
+
+### Never Redeclare existing variables
+Once data is declared, its data type _cannot_ be changed. Java will not allow it. As long as this variable ```n``` persists, we will never redeclare it as ```int n```. We will only reassign it (or redefine it) using ```n = someValue```.
+
+So if we use n in a loop, it should look like this:
+
+```java
+    //CORRECT CODE
+    int n = 0;
+    while(n < 10) {
+        System.out.println(n);
+        n = n + 1;
+    }
+```
+
+It should NOT look like this:
+
+```java
+    //INCORRECT CODE
+    int n = 0;
+    while(n < 10) {
+        System.out.println(n);
+        int n = n + 1;
+    }
+```
+
+Java will not allow us to re-declare a variable that already exists. In the above instance, we try to re-declare ```n``` as an integer inside the loop, even though we already declared it before the loop.
+
+### Declaration without Definition
+Note that we _can_ declare variables without defining them, and there are times when we want to do this. Remember our basic ```for``` loop:
+
 ```java
     for(int i = 0; i < 10; i++) {
         System.out.println(i);
     }
 ```
 
-This for loop is pretty simple. It loops 10 times&#8212;once for each value of its index ```i``` between 0 and 10. In this case, it prints the integers from 0 to 9 (not 1 through 10).
-
-What happens if we try to print ```i``` once the loop is complete?
+We _declare_ and _define_ the ```int i``` within the condition of the for loop, but we could pull the declaration out of the for loop.
 
 ```java
-    for(int i = 0; i < 10; i++) {
+    int i;
+    for(i = 0; i < 10; i++) {
         System.out.println(i);
     }
-    System.out.println(i);
 ```
 
-Java will throw a compiler error:
-
-```
-Test.java:6: error: cannot find symbol
-        System.out.println(i);
-```
-
-This is because we tried to reference the index variable i **Outside of its Scope**.
-
-You might think of a variable's scope as its _lifespan_. When you **declare** a variable, you give it a temporary life. But once the variable reaches the end of its scope, it dies and the computer throws it away.
-
-Let's break down ```i```'s scope in our for loop here.
+This works, but let's look at a similar ```while``` loop that does NOT work:
 
 ```java
-    for(int i = 0; i < 10; i++) { //Our for loop declares the variable i
-        System.out.println(i);
-        //i is alive within the loop.
-        //i's SCOPE is limited to this for loop
-    } //Once the for loop terminates, i reaches the end of its scope
-
-    //If we try to reference i here, Java will throw an error.
-    //This is because i has been thrown away and no longer exists.
-    //It's OUT OF SCOPE
-```
-
-Okay, so index variables within for loops don't exist outside of their loop. But what about some other common scope errors? Let's revisit our loan calculator. Many students tried to do something like this:
-
-```java
-    while(monthsRemaining > 0) {
-        double interest = rate * loanAmt;
+    int n;
+    while(n < 10) {
+        System.out.println(n);
+        n++;
     }
-    System.out.println(interest);
 ```
 
-You might expect this to print the total interest from the loop, but there are a number of issues with that expectation.
+Here, we declare n, but we don't define it. When our while loop tries to compare n with the condition ```n < 10```, it fails because n is still ```null```. ```null < 10``` is an invalid statement. We do not have to define variables when we declare them, but we _do_ have to define them before we try to _use_ them.
 
-Our first problem is that we calculate an interest value with ```rate * loanAmt```, but it's only one month's worth of interest. We aren't adding it to any variable that gets tracked over multiple months.
-
-The second, and more critical problem is that the declaration of the interest variable is _inside_ the while loop. Its scope is limited to this while loop, so as soon as we leave the while loop, it goes out of scope and gets thrown away.
-
-If you try to compile this using ```javac```, you will get the same error we got earlier:
-
-```
-Test.java:6: error: cannot find symbol
-        System.out.println(i);
-```
-
-## Scope of Functions
-Consider the following two functions:
+## The Life of a Variable
+### Birth (Declaration)
+Data does not exist until you **declare** it. A variable's declaration could be called its _birth_. The following code does not work:
 
 ```java
-class 
-    public static void main(String[] args) {
-        int n = 1;
-        while(n < 10) {
-            if(isEven()){
-                System.out.println(n + " is even");
-            }
+    //INCORRECT CODE
+    while(n < 10) {
+        System.out.println(n);
+        n++;
+    }
+```
+
+We call on the variable ```n```, but we never declared it.
+
+It turns out, however, that _where_ a variable is declared matters as well as _when_ a variable is declared. Look at the following code, which also doesn't work:
+
+```java
+    //INCORRECT CODE
+    int n = 1;
+    while(n < 10) {
+        int x = n*n;
+        System.out.println(x);
+        n++;        
+    }
+    System,out.println(x);
+```
+
+Here we declare a variable ```int x``` inside of a while loop, then we try to print ```x``` after the while loop terminates. This code won't work because ```x``` _dies_ as soon as the while loop ends. Because ```x``` is defined within the while loop, its **scope** is limited to that while loop. Once the while loop terminates, any data declared within its scope dies with it.
+
+### Death (End of Scope)
+When a variable is declared, its **scope** is limited within the confines of the its containing curly braces. Let's look at that loop again:
+
+```java
+    int n = 1;
+    while(n < 10) {
+        int x = n*n;
+        System.out.println(x);
+        n++;        
+    }
+``` 
+
+We have two variables with different scopes here. ```n``` is declared outside of the ```while``` loop, so its scope is bigger than the loop. If we want to print ```n``` after the loop completes, that will work just fine.
+
+```x```, on the other hand, is declared within the while loop. The while loop has an opening and closing curly brace (```{ }```) which define its scope. Any variables declared within the loop only exist until we exit those curly braces.
+
+Note that this works just fine:
+
+```java
+    int n = 1;
+    while(n < 10) {
+        int x = n*n;
+        if(x < 10){
+            x *= x;
         }
+        System.out.println(x);
+        n++;        
     }
+``` 
 
-    public static Boolean isEven() {
-        return n % 2 == 0;
-    }
+Even though there is a closing curly brace inbetween the declaration of ```x``` and our print statement, that curly brace is closing the ```if``` segment, not the ```while``` loop. ```x```'s scope is set within the ```while``` loop, so any call to ```x``` is fine until we pass the curly brace that terminates the ```while``` loop.
+
+## Temporary out of Scope
+
+
+
+```java
+    //INCORRECT CODE
+    
 ```
-
-These two functions won't work. You will get an error because we never declared a variable ```n``` inside the ```isEven``` function. Even though there _is_ a variable named ```n``` inside the ```main``` function, the scope of that ```n``` is limited to the main function. As soon as we enter a different function, the variable ```n``` is out of scope.
-
-There are two ways that we can fix this.

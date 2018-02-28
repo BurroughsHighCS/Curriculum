@@ -5,3 +5,5 @@
 3. [Hello Operator](./HelloOperator) (2 Coins)
 4. [Functions](./Functions) (2 Coins)
 5. [Loops](./Loops) (3 Coins)
+6. [Base-n Number Systems](./BaseNSystems) (2 Coins)
+
