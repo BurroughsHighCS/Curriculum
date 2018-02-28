@@ -75,9 +75,7 @@ Note that this project is worth twice as many points as the Loan Calculator. Exp
 
 4. Once the disc has reached its destination, print out the position as well as the number of points the user won for landing in that position.
     * The points should come from a ```VALUES``` integer array which is provided with the initial code. The contents of the VALUES array should be as follows:
-        * ```java
-            int[] VALUES = {1, 3, 2, 0, 5, 0, 2, 3, 1};
-        ```
+        * ```Java int[] VALUES = {1, 3, 2, 0, 5, 0, 2, 3, 1}; ```
     * If you need help reading data from the array, there are some explanations of arrays at the bottom of this document (or you can click [here](#arrays)).
     * The values array has 9 positions corresponding to the 9 positions where your plinko disc can end up.
         * VALUES[0] corresponds to position 0; VALUES[1] corresponds to position 1; and so on.
