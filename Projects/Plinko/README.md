@@ -41,7 +41,7 @@ Note that this project is worth twice as many points as the Loan Calculator. Exp
 
 3. At each row in single ball mode, the application should print out a visual representation of its row. After all the rows are complete, a the printout should look something like this:
 
-    * ```
+    ```
          . . . .O. . . .
         . . . .O. . . . .
          . . . .O. . . .
@@ -57,7 +57,7 @@ Note that this project is worth twice as many points as the Loan Calculator. Exp
          . . .O. . . . .
     ```
     * This printout can be done using a for loop. For example, I print my even-numbered rows using this for loop (I used the 16 position method):    
-        * ```java
+        ```java
             for(int i = 0; i <= 16; i++) {
                 if(position == i) {
                     System.out.print("O");
