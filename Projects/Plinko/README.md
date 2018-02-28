@@ -99,7 +99,7 @@ Note that this project is worth twice as many points as the Loan Calculator. Exp
 
 3. Each disc should be run through the plinko board now, with each disc's result stored.
     * Storage should follow one of two methods:
-        * Declare 9 "discsInPosition" variables: ```int discsIn1, discsIn2, discsIn3, etc...```).
+        * Declare 9 "discsInPosition" variables: ```int discsIn1, discsIn2, discsIn3, etc...```
             * This method will require a large if/else chain.
         * Declare a "results" int array with 9 values all initialized to 0: ```int[] results = {0, 0, 0, 0, 0, 0, 0, 0, 0};```
             * If your final position is a number between 0 and 8, you can just increment the value at that position in the array: ```results[position]++;```
@@ -119,7 +119,7 @@ A demo of the working Plinko game is also included here as ```PlinkoDemo.class``
 
 ## Additional Resources
 ### Random Numbers
-Java has a ```Math``` class that we used in our loan calculator to calculate exponential powers (```Math.pow()```). Math has a number of other helper functions, one of which is the ```Math.random()``` function.
+Java has a ```Math``` class that we used in our loan calculator to calculate exponential powers: ```Math.pow()```. The ```Math``` class has a number of other helper functions, one of which is the ```Math.random()``` function.
 
 The ```Math.random()``` function returns a random double between 0 and 1. We can use the result of the function to determine whether we shift left or right:
 
