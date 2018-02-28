@@ -68,3 +68,5 @@ Hexadecimal is a **Base-16** number system, so each digit represents a **Power o
 
 The same would hold true for any Base-n Number system. Each digit in any **Base-n** number system represents a **Power of n**
 
+## [Exercise](./Exercise)
+Do the following [exercise](./Exercise) for assignment credit.
