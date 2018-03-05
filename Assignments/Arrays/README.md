@@ -69,3 +69,8 @@ But what if we want to declare a really big array, with thousands of values? We 
 
     int[] array2 = new int[1000] //This syntax also works
 ```
+
+For both of the above arrays, every single value in the array will start out as **zero**. So ```array1``` contains 400 zero's, and ```array2``` contains 1000 zero's.
+
+## Reading and Manipulating Array Values
+Storing data in an array is great, but I need to be able
