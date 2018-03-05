@@ -63,10 +63,10 @@ Note that this project is worth twice as many points as the Loan Calculator. Exp
                     System.out.print("O");
                 }
                 else if(isEven(i)) {
-                    System.out.print(".");
+                    System.out.print(" ");
                 }
                 else {
-                    System.out.print(" ");
+                    System.out.print(".");
                 }
             }
             System.out.print("\n");
