@@ -34,18 +34,12 @@ class Plinko {
         }
     }
 
-    public static int runOddRow(int position) {
-        //Modify the position.
-        //Print the visualization of the row if it's single disc mode.
-
-        return position;
+    public static void printOddRow(int position) {
+        //Print the visualization of an odd numbered row with the disc in the provided position.
     }
 
-    public static int runEvenRow(int position) {
-        //Modify the position.
-        //Print the visualization of the row if it's single disc mode.
-
-        return position;
+    public static void printEvenRow(int position) {
+        //Print the visualization of an even numbered row with the disc in the provided position.
     }
 
     public static Boolean isEven(int x) {
