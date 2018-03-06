@@ -73,4 +73,50 @@ But what if we want to declare a really big array, with thousands of values? We 
 For both of the above arrays, every single value in the array will start out as **zero**. So ```array1``` contains 400 zero's, and ```array2``` contains 1000 zero's.
 
 ## Reading and Manipulating Array Values
-Storing data in an array is great, but I need to be able
+Storing data in an array is great, but we need to be able to read and update the data as well.
+
+### Reading Array Values
+Reading the values in an array is relatively simple:
+
+```Java
+    int[] numArray = {1, 2, 4, 8, 16, 32, 64, 128, 256, 512};
+
+    System.out.println( numArray[0] ); //Value at position 0 (1)
+    System.out.println( numArray[1] ); //Value at position 1 (2)
+    System.out.println( numArray[2] ); //Value at position 2 (4)
+    System.out.println( numArray[3] ); //Value at position 3 (8)
+    //...
+```
+
+Arrays are indexed starting at zero. This means that an array with 10 positions has 10 indices, or positions: Position 0, position 1, position 2, all the way to position 9.
+
+The syntax to read the value at position **i** is ```arrayName[i]```. You can read this syntax out loud as "arrayName AT i"; short for "value of arrayName at position i"
+
+### Manipulating / Updating Array Values
+If we can read a value in an array, it turns out changing a value in an array isn't much more complex:
+
+```Java
+    int[] numArray = {1, 2, 4, 8, 16, 32, 64, 128, 256, 512};
+
+    System.out.println( numArray[0] ); //Prints 1
+
+    numArray[0] = 1024;
+    System.out.println( numArray[0] ); //Prints the new value, 1024
+```
+
+The line ```numArray[0] = 1024``` would read simply as "Assign 1024 to numArray AT 0". We reassign the value at position 0 from ```1``` to ```1024```, and our print statement will print ```1024```
+
+Any assignment operator can be used to update values in an array:
+
+```Java
+    numArray[0]++;
+    numArray[0]--;
+    numArray[0] += 2;
+    numArray[0] -= 2;
+    numArray[0] *= 2;
+    numArray[0] /= 2;
+    numArray[0] %= 2;
+```
+
+## [Exercise](./Exercise.md)
+You should have the tools needed to finish our array [exercise](./Exercise.md)
