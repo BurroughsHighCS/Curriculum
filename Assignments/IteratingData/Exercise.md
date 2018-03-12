@@ -7,7 +7,7 @@
 
 2. Write a **second loop** that uses your ```nums``` array to **print the absolute value of each number in the array.**
 
-3. Write code to fill an array with the **first 1000 numbers in the fibonacci sequence. Print each number.**
+3. Write code to fill an array with the **first 40 numbers in the fibonacci sequence. Print each number.**
     * The fibonacci sequence is a sequence of numbers where each number is the sum of the two previous numbers.
     * The first two numbers in the fibonnaci sequence are ```0``` and ```1```
         * So ```fibonacci[0] = 0``` and ```fibonacci[1] = 1```
