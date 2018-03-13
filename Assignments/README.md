@@ -9,4 +9,5 @@
 7. [Lifetime of Data](./Scope) (1 Coin)
 8. [Arrays](./Arrays) (2 Coins)
 9. [Iterating Over Data](./IteratingData) (3 Coins)
+10. [Lists](./Lists) (4 Coins)
 
