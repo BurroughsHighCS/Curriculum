@@ -20,27 +20,27 @@ Java has several different kinds of Lists. For the purposes of this class, we sh
 Let's take a basic usage of a simple Array:
 
 ```Java
-int[] numArray = {1,2,3,4,5};
+    int[] numArray = {1,2,3,4,5};
 
-for(int i = 0; i < numArray.length; i++) {
-    System.out.println(nums[i]);
-}
+    for(int i = 0; i < numArray.length; i++) {
+        System.out.println(nums[i]);
+    }
 ```
 
 We can recreate this same code using an ArrayList.
 
 ```Java
-ArrayList<int> numList = new ArrayList<int>();
+    ArrayList<int> numList = new ArrayList<int>();
 
-nums.add(1);
-nums.add(2);
-nums.add(3);
-nums.add(4);
-nums.add(5);
+    nums.add(1);
+    nums.add(2);
+    nums.add(3);
+    nums.add(4);
+    nums.add(5);
 
-for(int i = 0; i < numList.size(); i++) {
-    System.out.println(numList.at(i));
-}
+    for(int i = 0; i < numList.size(); i++) {
+        System.out.println(numList.at(i));
+    }
 ```
 
 Note some of the changes:
@@ -55,14 +55,54 @@ Note some of the changes:
 It's annoying to have to enter all of our data one value at a time, but we _can_ use an array to populate a list. The ```add()``` function for a list can accept either single items, or arrays of items:
 
 ```Java
-ArrayList<int> numList = new ArrayList<int>();
-int[] numArray = {1,2,3,4,5};
+    ArrayList<int> numList = new ArrayList<int>();
+    int[] numArray = {1,2,3,4,5};
 
-numList.add(numArray);
+    numList.add(numArray);
 
-for(int i = 0; i < numList.size(); i++) {
-    System.out.println(numList.at[i]);
-}
+    for(int i = 0; i < numList.size(); i++) {
+        System.out.println(numList.at[i]);
+    }
 ```
 
 But what's the point of using a list if we still have to use an Array _anyway_?
+
+Well, with a list we can continue to add or remove items from the collection after it has been initialized:
+
+```Java
+    ArrayList<int> numList = new ArrayList<int>();
+    int[] numArray = {1,2,3,4,5};
+
+    //Initial population using an array. List GROWS from size 0 to size 5;
+    numList.add(numArray);
+    
+    //Adding more individual integers. List GROWS for each integer added
+    numList.add(5); //size 6
+    numList.add(10); //size 7
+    numList.add(15); //size 8
+    numList.add(20); //size 9
+    numList.add(25); //size 10
+
+    //Removing items in the List. List SHRINKS for each item removed
+    numList.removeAt(2); //Remove item at position 2, size becomes 9
+    numList.removeAt(3); //Remove item at position 3, size becomes 8
+
+    for(int i = 0; i < numList.size(); i++) {
+        System.out.println(numList.at[i]);
+    }
+```
+
+See above that to **remove** an item from the list, we remove **at** an index. If we want to remove the number 25 from our List, After all of our adds and removes, our for loop will print the following:
+
+```
+1
+2
+3
+5
+10
+15
+20
+25
+```
+
+### Indexes in Lists
