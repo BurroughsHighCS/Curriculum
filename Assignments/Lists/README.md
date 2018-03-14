@@ -84,15 +84,15 @@ Well, with a list we can continue to add or remove items from the collection aft
     numList.add(25); //size 10
 
     //Removing items in the List. List SHRINKS for each item removed
-    numList.removeAt(2); //Remove item at position 2, size becomes 9
-    numList.removeAt(3); //Remove item at position 3, size becomes 8
+    numList.remove(2); //Remove item at position 2, size becomes 9
+    numList.remove(3); //Remove item at position 3, size becomes 8
 
     for(int i = 0; i < numList.size(); i++) {
         System.out.println(numList.at[i]);
     }
 ```
 
-See above that to **remove** an item from the list, we remove **at** an index. If we want to remove the number 25 from our List, After all of our adds and removes, our for loop will print the following:
+See above that to **remove** an item from the list, we remove **at** an index. If we want to remove the number 25 from our List, we can't just remove the number 25, we have to figure out its what position the number 25 sits at and remove it by index After all of our adds and removes, our for loop will print the following:
 
 ```
 1
@@ -106,3 +106,4 @@ See above that to **remove** an item from the list, we remove **at** an index. I
 ```
 
 ### Indexes in Lists
+
