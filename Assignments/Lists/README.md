@@ -36,11 +36,11 @@ We can recreate this same code using an ArrayList.
 ```Java
     ArrayList<Integer> numList = new ArrayList<Integer>();
 
-    nums.add(1);
-    nums.add(2);
-    nums.add(3);
-    nums.add(4);
-    nums.add(5);
+    numList.add(1);
+    numList.add(2);
+    numList.add(3);
+    numList.add(4);
+    numList.add(5);
 
     for(int i = 0; i < numList.size(); i++) {
         System.out.println(numList.get(i));
