@@ -77,7 +77,7 @@ To **append** data to a list means to add it _at the end of the list_. This oper
     strList.add("World"); // ["Hello", "World"]
 ```
 
-An **append** operation using the ```add()``` function will grow the the size of the list by 1 by inserting the data you inserted into a new position at the end of the list.
+An **append** operation using the ```add()``` function will grow the the size of the list by 1 by adding the data supplied into a new position at the end of the list.
 
 ### Inserting Data
 An **Insert** operation, on the other hand, can add data to any existing position in the list. This is still considered an **add** operation, so it still uses the ```add()``` function.
