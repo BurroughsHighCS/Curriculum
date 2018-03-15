@@ -13,8 +13,12 @@ With Lists, we don't have to make assumptions. We can declare a list that will s
 * Collection - Arrays and Lists are both _collections_ of data. They collect several pieces of data into a single variable which allows us to access them using an index. There are many other types of collections that we may cover later in the class.
 * List
 * ArrayList
+* Add
+* Append
+* Insert
+* Remove
 
-## How to Use Lists
+## List Basics
 Java has several different kinds of Lists. For the purposes of this class, we should only ever need to use one of them called the **ArrayList**. Don't worry about the distinction too much. Underneath the hood, Java uses Arrays to create ArrayLists, but we never have to worry about that. We can use it without understanding what happens underneath the hood.
 
 Let's take a basic usage of a simple Array:
@@ -30,7 +34,7 @@ Let's take a basic usage of a simple Array:
 We can recreate this same code using an ArrayList.
 
 ```Java
-    ArrayList<int> numList = new ArrayList<int>();
+    ArrayList<Integer> numList = new ArrayList<Integer>();
 
     nums.add(1);
     nums.add(2);
@@ -39,71 +43,23 @@ We can recreate this same code using an ArrayList.
     nums.add(5);
 
     for(int i = 0; i < numList.size(); i++) {
-        System.out.println(numList.at(i));
+        System.out.println(numList.get(i));
     }
 ```
 
 Note some of the changes:
 * First, we can't initialize our data using the ```{1,2,3,4,5}``` syntax.
     * Our List begins at size 0, and each time we call ```nums.add(someNumber)``` we **grow** the list.
-* Second, instead of using ```numArray.length``` as the upper bound of our for loop, we use ```numList.size()```. Lists don't have a _length_ property. They have a _size_ **function**.
+* Second, we can't use ```int``` for our integer data type. We have to use a different version of integer in Java called ```Integer```: ```ArrayList<Integer> numList = new ArrayList<Integer>()```. numList is an ArrayList _of type **Integer**_.
+    * ```Integer``` is functionally equivalent to ```int```. Don't worry about the difference. Just remember to use ```Integer``` for lists.
+    * If you would prefer. You can just use ```Integer``` for everything from now on. It will work for everything that ```int``` can do.
+* Third, instead of using ```numArray.length``` as the upper bound of our for loop, we use ```numList.size()```. Lists don't have a _length_ property. They have a _size_ **function**.
     * While _size_ is a function, it just returns the number of items in the array. ```numList.size()``` will return 5 just like ```numArray.length``` returned 5.
     * There are a few reasons for the difference, but don't worry about them too much. For now just try to remember the difference.
-* Third, instead of reading a number using the ```numArray[i]``` syntax, we call a function to do the same thing ```numList.at(i)```.
-    * ```numList[i]``` should still work in most cases, but the ```numList.at(i)``` function for lists works better overall.
+* Finally, instead of reading a number using the ```numArray[i]``` syntax, we call a function to do the same thing ```numList.get(i)```.
+    * ```numList[i]``` should still work in most cases, but the ```numList.get(i)``` function for lists works better overall.
 
-It's annoying to have to enter all of our data one value at a time, but we _can_ use an array to populate a list. The ```add()``` function for a list can accept either single items, or arrays of items:
+## Use Cases
 
-```Java
-    ArrayList<int> numList = new ArrayList<int>();
-    int[] numArray = {1,2,3,4,5};
-
-    numList.add(numArray);
-
-    for(int i = 0; i < numList.size(); i++) {
-        System.out.println(numList.at[i]);
-    }
-```
-
-But what's the point of using a list if we still have to use an Array _anyway_?
-
-Well, with a list we can continue to add or remove items from the collection after it has been initialized:
-
-```Java
-    ArrayList<int> numList = new ArrayList<int>();
-    int[] numArray = {1,2,3,4,5};
-
-    //Initial population using an array. List GROWS from size 0 to size 5;
-    numList.add(numArray);
-    
-    //Adding more individual integers. List GROWS for each integer added
-    numList.add(5); //size 6
-    numList.add(10); //size 7
-    numList.add(15); //size 8
-    numList.add(20); //size 9
-    numList.add(25); //size 10
-
-    //Removing items in the List. List SHRINKS for each item removed
-    numList.remove(2); //Remove item at position 2, size becomes 9
-    numList.remove(3); //Remove item at position 3, size becomes 8
-
-    for(int i = 0; i < numList.size(); i++) {
-        System.out.println(numList.at[i]);
-    }
-```
-
-See above that to **remove** an item from the list, we remove **at** an index. If we want to remove the number 25 from our List, we can't just remove the number 25, we have to figure out its what position the number 25 sits at and remove it by index After all of our adds and removes, our for loop will print the following:
-
-```
-1
-2
-3
-5
-10
-15
-20
-25
-```
-
-### Indexes in Lists
+### Appending Data
 

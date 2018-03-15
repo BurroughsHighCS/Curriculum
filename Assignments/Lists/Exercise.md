@@ -30,4 +30,4 @@ Hints:
     3. Remove a todo item (using its index).
 
 * You will need to use a scanner's ```nextLine()``` function to read their todoList inputs.
-* You will need to use a scanner's ```hasNextInt()``` and ```nextInt()``` functions to read items to be removed
+* You will need to use a scanner's ```hasNextInt()``` and ```nextInt()``` functions to read items to be removed.
