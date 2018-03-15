@@ -60,6 +60,80 @@ Note some of the changes:
     * ```numList[i]``` should still work in most cases, but the ```numList.get(i)``` function for lists works better overall.
 
 ## Use Cases
+Let's summarize some of the use cases, and the syntax for them:
 
 ### Appending Data
+To **append** data to a list means to add it _at the end of the list_. This operation uses the List's ```add()``` function:
+
+```Java
+    ArrayList<Integer> numList = new ArrayList<Integer>(); // [] (An Empty List)
+    numList.add(1); // [1]
+    numList.add(10); // [1, 10]
+    numList.add(100); // [1, 10, 100]
+
+    //Works for other data types, too
+    ArrayList<String> strList = new ArrayList<String>(); // []
+    strList.add("Hello"); // ["Hello"]
+    strList.add("World"); // ["Hello", "World"]
+```
+
+An **append** operation using the ```add()``` function will grow the the size of the list by 1 by inserting the data you inserted into a new position at the end of the list.
+
+### Inserting Data
+An **Insert** operation, on the other hand, can add data to any existing position in the list. This is still considered an **add** operation, so it still uses the ```add()``` function.
+
+```Java
+    ArrayList<Integer> numList = new ArrayList<Integer>(); // [] (An Empty List)
+
+    // APPENDS
+    numList.add(1); // [1]
+    numList.add(10); // [1, 10]
+    numList.add(100); // [1, 10, 100]
+
+    // INSERTS
+    // Insert the value 5 at position 1:
+    numList.add(1, 5); // [1, 5, 10, 100]
+
+    // Insert the value 1 at position 1:
+    numList.add(1, 1); // [1, 1, 5, 10, 100]
+```
+
+Note two things:
+1. The ```add()``` function takes two parameters for an insertion:
+    * **An insertion index**: Where we want to add the data.
+    * **An insertion value**: What data we want to add at the chosen index.
+2. We inserted twice at index 1. Each time, the value we inserted pushed the rest of the data back 1 position. **Data can move to different indexes in a list.** Anytime we perform an **insert** or **remove** operation, segments of the list are likely to shift right or left by 1 index.
+
+### Removing Data
+A **remove** operation uses the ```remove()``` function:
+
+```Java
+    ArrayList<Integer> numList = new ArrayList<Integer>(); // [] (An Empty List)
+
+    // APPENDS
+    numList.add(1); // [1]
+    numList.add(10); // [1, 10]
+    numList.add(100); // [1, 10, 100]
+
+    // INSERTS
+    numList.add(1, 5); // [1, 5, 10, 100]
+    numList.add(1, 1); // [1, 1, 5, 10, 100]
+
+    // REMOVES
+    //Remove the item AT position 0
+    numList.remove(0) // [1, 5, 10, 100]
+
+    //Remove the item AT position 0 (again)
+    numList.remove(0) // [5, 10, 100]
+
+    //Remove the item AT position 1
+    numList.remove(1) // [5, 100]
+```
+
+The ```remove()``` function takes an **index** as a parameter. You provide the index you want removed from the List, and it will remove whatever data was stored at that position in the list.
+
+Note again that remaining items in the list are prone to change positions when you insert or remove data from the middle of the list.
+
+## Assignment [Exercise](./Exercise.md)
+You should be prepared to try the Lists exercise now.
 
