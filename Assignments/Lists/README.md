@@ -135,5 +135,5 @@ The ```remove()``` function takes an **index** as a parameter. You provide the i
 Note again that remaining items in the list are prone to change positions when you insert or remove data from the middle of the list.
 
 ## Assignment [Exercise](./Exercise.md)
-You should be prepared to try the Lists exercise now.
+You should be prepared to try the Lists [exercise](./Exercise.md) now.
 
