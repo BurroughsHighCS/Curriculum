@@ -9,7 +9,7 @@
 ```
 _____________________________
 
-2. Each character in a Java `String` by combining several `char` data type characters together. A `char` data type can represent any character from the ASCII standard, which contains 128 unique characters represented using the values 0-127. How many bits (binary digits) would be needed to represent the string **"Java"**?
+2. Each character in a Java `String` is made by combining several `char` data type characters together. A `char` data type can represent any character from the ASCII standard, which contains 128 unique characters represented using the values 0-127. How many bits (binary digits) would be needed to represent the string **"Java"**?
 
 ```
     (A) 7
