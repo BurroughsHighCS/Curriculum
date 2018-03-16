@@ -1,9 +1,9 @@
 1. Vehicle License plates can only contain the characters 0-9 and A-Z. This combined character range forms a base-36 number system. How many unique license plates can be made if each license plate has 7 characters. In other words, what's the **maximum number of values** represented within **7 digits of a base-36** number system?
 
     (A) 36 * 7 (252)
-    (B) 36^7 (~7.8E11 or 78 Billion)
+    (B) 36^7 (> 7.8E11 or 78 Billion)
     (D) 36^7 - 1
-    (C) 7^36 (~ 2.6E30 or 2.6 nonillion (9-illion))
+    (C) 7^36 (> 2.6E30 or 2.6 nonillion (9-illion))
     (E) 7^36 - 1
 
 
