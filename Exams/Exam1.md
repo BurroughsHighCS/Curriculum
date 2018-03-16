@@ -67,7 +67,7 @@ When is the `findMax` function above NOT guaranteed to return the correct index?
 
 ```
     (A) The largest value in numArray is in numArray[0].
-    (B) The largest value in numArray is a negative number. X
+    (B) The largest value in numArray is a negative number.
     (A) The largest value in numArray is in numArray[numArray.length - 1].
     (C) The largest value in numArray occurs more than once.
     (D) It is never guaranteed to return the correct index.
