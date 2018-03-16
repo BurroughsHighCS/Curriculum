@@ -7,7 +7,7 @@
     (C) 7^36 (~2.6E30 or 2.6 nonillion (9-illion))
     (E) 7^36 - 1
 ```
-
+_____________________________
 
 2. Each character in a Java `String` by combining several `char` data type characters together. A `char` data type can represent any character from the ASCII standard, which contains 128 unique characters represented using the values 0-127. How many bits (binary digits) would be needed to represent the string **"Java"**?
 
@@ -19,6 +19,7 @@
     (E) 28
 ```
 
+_____________________________
 
 3. Consider the following `isPrime()` function, which should take a parameter of type `int` and return `true` if the provided integer is a prime number, and `false` if it is not:
 
@@ -45,6 +46,7 @@ What should the values `lowerBound` and `upperBound` be to test if a number is p
     (E) lowerBound = 2; upperBound = x-1;
 ```
 
+_____________________________
 
 4. Consider the following `findMax()` function, which should take an array of type `int[]` as a parameter and return the **first index** of the largest value in the array:
 
@@ -76,6 +78,7 @@ When is the `findMax` function above NOT guaranteed to return the correct index?
     (D) It is never guaranteed to return the correct index.
 ```
 
+_____________________________
 
 5. Assume that `x` and `y` are valid `Boolean` variables.
 
@@ -93,6 +96,7 @@ Which of the following always evaluates to the same value as above?
     (E) x && y
 ```
 
+_____________________________
 
 6. What will the following code segment print?
 
@@ -130,6 +134,7 @@ Which of the following always evaluates to the same value as above?
         @@@
 ```
 
+_____________________________
 
 7. Assume that a coin, when flipped, has an equal probabiliy of landing with either "Heads" or "Tails" face up. The following incomplete code attempts to compute the value number of "Heads" values that occur when flipping a coin **n** times:
 
@@ -158,6 +163,7 @@ Which of the following code segmetns would best simulate the number of "Heads" v
     (E) All of the above.
 ```
 
+_____________________________
 
 8. Consider the following loop, where n is some positive integer:
 
@@ -178,6 +184,7 @@ In terms of `n`, which Java expression represents the **maximum** number of time
     (E) n - 1 / 2
 ```
 
+_____________________________
 
 9. Consider the following instance variable and method:
 
@@ -207,6 +214,7 @@ Which of the following lists the correct values of the numbers array after execu
     (E) {10, 20, 150, 40, 250, 60, 350, 80, 450, 100}
 ```
 
+_____________________________
 
 10. What is printed as a result of executing the following statement?
 
