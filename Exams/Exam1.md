@@ -2,9 +2,9 @@
 
 ```
     (A) 36 * 7 (252)
-    (B) 36^7 (> 7.8E11 or 78 Billion)
+    (B) 36^7 (~7.8E11 or 78 Billion)
     (D) 36^7 - 1
-    (C) 7^36 (> 2.6E30 or 2.6 nonillion (9-illion))
+    (C) 7^36 (~2.6E30 or 2.6 nonillion (9-illion))
     (E) 7^36 - 1
 ```
 
