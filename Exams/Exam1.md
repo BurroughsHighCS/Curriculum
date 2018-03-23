@@ -3,8 +3,8 @@
 ```
     (A) 36 * 7 (252)
     (B) 36^7 (~7.8E11 or 78 Billion)
-    (D) 36^7 - 1
-    (C) 7^36 (~2.6E30 or 2.6 nonillion (9-illion))
+    (C) 36^7 - 1
+    (D) 7^36 (~2.6E30 or 2.6 nonillion (9-illion))
     (E) 7^36 - 1
 ```
 _____________________________
@@ -42,7 +42,7 @@ What should the values `lowerBound` and `upperBound` be to test if a number is p
     (A) lowerBound = 0; upperBound = x;
     (B) lowerBound = 1; upperBound = x;
     (C) lowerBound = 2; upperBound = x;
-    (E) lowerBound = 1; upperBound = x-1;
+    (D) lowerBound = 1; upperBound = x-1;
     (E) lowerBound = 2; upperBound = x-1;
 ```
 
@@ -73,9 +73,9 @@ When is the `findMax` function above NOT guaranteed to return the correct index?
 ```
     (A) The largest value in numArray is in numArray[0].
     (B) The largest value in numArray is a negative number.
-    (A) The largest value in numArray is in numArray[numArray.length - 1].
-    (C) The largest value in numArray occurs more than once.
-    (D) It is never guaranteed to return the correct index.
+    (C) The largest value in numArray is in numArray[numArray.length - 1].
+    (D) The largest value in numArray occurs more than once.
+    (E) It is never guaranteed to return the correct index.
 ```
 
 _____________________________
@@ -142,23 +142,19 @@ Which of the following code segmetns would best simulate the number of "Heads" v
 
 ```
     (A) int numHeads = n * (int) (Math.random() * 2);
-    (B) ```Java
-            int numHeads = 0;
-            for(int i = 0; i < n; i++) {
-                int num = Math.random() * 2;
-                if(num == 1) {
-                    numHeads++;
-                }
+    (B) int numHeads = 0;
+        for(int i = 0; i < n; i++) {
+            int num = Math.random() * 2;
+            if(num == 1) {
+                numHeads++;
             }
-        ```
-    (C) ```Java
-            int numHeads = 0;
-            for(int i = 0; i < n; i++) {
-                if(Math.random() > .5) {
-                    numHeads++;
-                }
+        }
+    (C) int numHeads = 0;
+        for(int i = 0; i < n; i++) {
+            if(Math.random() > .5) {
+                numHeads++;
             }
-        ```
+        }
     (D) B and C
     (E) All of the above.
 ```
