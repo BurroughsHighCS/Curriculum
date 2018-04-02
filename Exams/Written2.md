@@ -1,4 +1,4 @@
-Consider a system for processing names and addresses from a mailing list. A `Recipients` class will be used as part of this system. The lines in the mailing list are stored in an `ArrayList<String>, a private instance variable in the Recipients class. The blank line that separates recipients in the mailing list is stored as the empty string in this list, and the final element in the list is an emptry string.
+Consider a system for processing names and addresses from a mailing list. A `Recipients` class will be used as part of this system. The lines in the mailing list are stored in an `ArrayList<String>`, a private instance variable in the Recipients class. The blank line that separates recipients in the mailing list is stored as the empty string in this list, and the final element in the list is an emptry string.
 
 A portion of the mailing list is shown below, with the corresponding part of the `ArrayList`:
 
