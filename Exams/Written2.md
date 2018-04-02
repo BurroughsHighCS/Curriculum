@@ -46,7 +46,7 @@ public class Recipients {
     *   - Lines appear in the list in the same order that they appear in the mailing list
     *   - Blank line separators in the mailing list are stored as empty strings.
     */
-    public Reciptions() 
+    public Recipients() 
     { /* Implementation not shown */ }
 
     /** Postcondition: Returns the city contained in the cityZip string of an address
