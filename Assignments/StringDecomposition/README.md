@@ -15,7 +15,6 @@ We have worked a lot with the `String` data type, but there are a lot of functio
 * Comparison
     * `Boolean equals(String other)`
         * Compares two Strings.
-        * The `==` operator does not work as you expect it to for the `String` data type. You must use the `equals(String other)` function to compare equality between two strings in Java.
         * ```Java
             String s = "Hello";
             if(s == "Hello") {
@@ -24,7 +23,8 @@ We have worked a lot with the `String` data type, but there are a lot of functio
 
             if(s.equals("Hello")) {
                 System.out.print("This works!")
-            }```
+            }
+        * The `==` operator does not work as you expect it to for the `String` data type. You must use the `equals(String other)` function to compare equality between two strings in Java.
 
 * Substrings
     * `String substring(int from, int to)`

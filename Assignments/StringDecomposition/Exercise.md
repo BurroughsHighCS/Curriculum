@@ -43,7 +43,7 @@ Write code to make three `ArrayList<Integer>`s.
     * ```Java
         for(int idx : YOURLIST) {
             System.out.println(SENTENCE.charAt(idx));
-        }```
+        }
 
 3. Using the same sentence from question 2, write code to make a single `ArrayList<String>` containing each word in the sentence.
 
