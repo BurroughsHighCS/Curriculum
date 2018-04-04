@@ -3,6 +3,8 @@ We have worked a lot with the `String` data type, but there are a lot of functio
 
 ## References
 * Indexing / Access
+    * `int length()`
+        * Returns the number of chars contained in the string.
     * `char charAt(int index)`
         * Returns the `char` at position `index` within the string.
     * `int indexOf(char c)`
