@@ -6,9 +6,9 @@ We have worked a lot with the `String` data type, but there are a lot of functio
     * `char charAt(int index)`
         * Returns the `char` at position `index` within the string.
     * `int indexOf(char c)`
-        * Returns the `int` of the _first occurence_ of `char c` within the string.
+        * Returns the `int` of the index of the _first occurence_ of `char c` within the string.
     * `int indexOf(string substr)` 
-        * Returns the `int` of the _first char_ of the _first occurence_ of `String substr` within the string.
+        * Returns the `int` of the index of the _first char_ of the _first occurence_ of `String substr` within the string.
 * Traversal
     * `for(char c : str) {...}`
     * `for(int i = 0; i < str.length(); i++) {...}`
