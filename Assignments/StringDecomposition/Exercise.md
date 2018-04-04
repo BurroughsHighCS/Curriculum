@@ -8,7 +8,7 @@
     System.out.println(c1);
 
     char c2 = s.charAt(10);
-    System.out.println(c);
+    System.out.println(c2);
 
     int idx1 = s.indexOf(',');
     System.out.println(idx1);
