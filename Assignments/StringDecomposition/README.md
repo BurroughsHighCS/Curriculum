@@ -10,7 +10,7 @@ We have worked a lot with the `String` data type, but there are a lot of functio
     * `int indexOf(string substr)` 
         * Returns the `int` of the index of the _first char_ of the _first occurence_ of `String substr` within the string.
 * Traversal
-    * `for(char c : str) {...}`
+    * `for(char c : str) {...} //DOES NOT WORK`
     * `for(int i = 0; i < str.length(); i++) {...}`
 * Comparison
     * `Boolean equals(String other)`
