@@ -24,8 +24,7 @@ We have worked a lot with the `String` data type, but there are a lot of functio
 
             if(s.equals("Hello")) {
                 System.out.print("This works!")
-            }
-        ```
+            }```
 
 * Substrings
     * `String substring(int from, int to)`
