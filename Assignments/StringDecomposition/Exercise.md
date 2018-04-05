@@ -35,7 +35,7 @@
 2. Consider the following sentence:
 ```Given the circumstances, I'm not sure if it was a success, but it certainly seems promising.```
 
-Write code to make three `ArrayList<Integer>`s.
+Write code to make three `ArrayList<Integer>`.
 * One containing the positions of every space in the sentence.
 * One containing the positions of every punctuation mark in the sentence (, or .).
 * One containing the starting index of each word `it` (the index of the 'i' in each occurence of the word).
