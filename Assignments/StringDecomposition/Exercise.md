@@ -41,7 +41,7 @@ Write code to make three `ArrayList<Integer>`s.
 * One containing the starting index of each word `it` (the index of the 'i' in each occurence of the word).
     * To test this code, the following loop should print two 'i's to the console:
     * ```Java
-        for(int idx : YOURLIST) {
+        for(Integer idx : YOURLIST) {
             System.out.println(SENTENCE.charAt(idx));
         }
 

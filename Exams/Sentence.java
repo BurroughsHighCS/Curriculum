@@ -6,21 +6,14 @@ public class Sentence {
     * If there are no blanks in the sentence, return an empty list.
     */
     public List<Integer> getBlankPositions(){ 
-        ArrayList<Integer> blankPositions = new ArrayList<Integer>();
-        for(int i = 0; i < sentence.length(); i++) {
-            if(sentence.charAt(i) == ' ') {
-                blankPositions.add(i);
-            }
-        }
 
-        return blankPositions;
     }
 
     /** @return the number of words in this sentence
     *   Precondition: Sentence contains at least one word
     */
     public int countWords() { 
-        return getBlankPositions().size() + 1;
+
     }
 
     /** @return the array of words in this sentence
