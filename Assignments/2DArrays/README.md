@@ -1,4 +1,5 @@
 # 2 Dimensional Arrays
+2-Dimensional Arrays, also known in the math world as _matrices_, are pretty important in programming. They are used frequently in graphics rendering engines, to name one application.
 
 # Example
 ```Java
@@ -6,8 +7,14 @@
 
     for(int i = 0; i < twoDArray.length; i++) {
         for(int j = 0; j < twoDArray[i].length; i++) {
-            twoDArray[i][j] = i * (j + 1);    
+            twoDArray[i][j] = (i * 4) + (j + 1);    
             System.out.println(twoDArray[i][j]);
         }
     }
+
+    //Prints the numbers 1 - 16 from the following array:
+    //[1, 2, 3, 4]
+    //[5, 6, 7, 8]
+    //[9, 10, 11, 12]
+    //[13, 14, 15, 16]
 ```
