@@ -30,3 +30,7 @@
         }
     }
 ```
+
+2. Write code that populates:
+    * A 4x4 matrix with the powers of 3.
+    * A 5x5 matrix with the numbers from -1 to -25.
