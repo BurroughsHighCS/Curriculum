@@ -26,11 +26,11 @@
     for(int i = 0; i < arr3.length; i++) {
         for(int j = 0; j < arr3[i].length; j++) {
             arr3[i][j] = num; 
-            num *= 2
+            num *= 2;
         }
     }
 ```
 
 2. Write code that populates:
-    * A 4x4 matrix with the powers of 3.
+    * A 3x3 matrix with the powers of 3.
     * A 5x5 matrix with the numbers from -1 to -25.
