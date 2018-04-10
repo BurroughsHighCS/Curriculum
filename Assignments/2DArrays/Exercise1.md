@@ -20,7 +20,7 @@
         }
     }
 
-    int[][] arr3 = new int[5][5];
+    int[][] arr3 = new int[4][4];
 
     int num = 1;
     for(int i = 0; i < arr3.length; i++) {
