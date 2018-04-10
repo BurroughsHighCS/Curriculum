@@ -10,4 +10,6 @@
 8. [Arrays](./Arrays) (2 Coins)
 9. [Iterating Over Data](./IteratingData) (3 Coins)
 10. [Lists](./Lists) (4 Coins)
+11. [String Decomposition](./StringDecomposition) (4 coins)
+12. [2 Dimensional Arrays](./2DArrays)(2 coins + 3 coins) 
 

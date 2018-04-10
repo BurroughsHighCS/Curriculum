@@ -1,4 +1,4 @@
-class test {
+class Test {
     public static void main(String[] args) {
         int[][] twoDArray = new int[4][4];
         //[0,0,0,0]
