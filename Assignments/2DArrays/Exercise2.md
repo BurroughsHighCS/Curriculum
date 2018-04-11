@@ -1,4 +1,5 @@
-# Exercise 2
+# 2D Array Exercise 2
+
 1. Write a function `int[][] reverseMatrix(int[][] mat)` which takes a two-dimensional array of any dimensions and reverse all of the entries inside of it.
 
 Example:

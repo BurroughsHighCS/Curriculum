@@ -1,3 +1,5 @@
+# 2D Arrays Exercise 1
+
 1. Write the contents of each array after each loop:
 ```Java
     //Example - Contents of a 3x3 array of zeros
