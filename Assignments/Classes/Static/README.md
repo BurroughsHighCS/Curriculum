@@ -74,7 +74,7 @@ Because everything else is `private`, we can't access it from outside the class.
     }
 ```
 
-Even though the return time is correct and the function is written correctly, we are unable to call a class's private functions from outside the class.
+Even though the return type is correct and the function is written correctly, we are unable to call a class's private functions from outside the class.
 
 However, if you look at the `generateSentence()` function inside the `SentenceUtil` class, it calls those functions just fine:
 
