@@ -2,7 +2,8 @@
 
 1. Write a loop that fills a matrix with the following values:
 
-```[2, 4, 8]
+```
+[2, 4, 8]
 [3, 9, 27]
 [5, 25, 125]
 ```
