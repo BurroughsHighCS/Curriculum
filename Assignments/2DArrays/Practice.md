@@ -5,7 +5,7 @@
 ```
 [2, 4, 8]
 [3, 9, 27]
-[5, 25, 125]
+[4, 16, 64]
 ```
 
 Write a function `printMatrix(int[][] mat)` that uses a foreach loop to print all the values of the matrix. Print your matrix.
