@@ -2,7 +2,7 @@ package utils;
 
 import java.util.Random;
 
-public class MatrixUtil {
+public class StaticMatrixUtil {
     public static void printMatrix(int[][] matrix) {
         for(int[] row : matrix) {
             for(int col : row) {
