@@ -1,4 +1,4 @@
 # Classes
 
 ### [Static Classes](./Static)
-### [Object Oriented Design](./ObjectOriented)
+### [Constructed Classes](./Constructed/Exercise2.md)
