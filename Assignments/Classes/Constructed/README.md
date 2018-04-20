@@ -28,7 +28,7 @@ Let's look at constructors. Specifically, let's try making a `Student` class.
     }
 ```
 
-Ok, we have a student class. We a Student to have a first name, a last name, and a student id, but we need to be able to pass that information to the student object.
+Ok, we have a student class. We expect a Student to have a first name, a last name, and a student id, but we need to be able to pass that information to the student object.
 
 To do that, we add a constructor.
 
