@@ -1,41 +1,39 @@
 import java.util.ArrayList;
 
 class StringDecomp {
-    public static String message = "Substring is a powerful tool in any language. "
-                    + "Its definition changes between languages, which can be tricky. "
-                    + "In some languages, the second parameter is the length of the desired substring, "
-                    + "while in others, its the endpoint of the desired substring. "
-                    + "In Java, the second parameter (when included) defines the ENDPOINT of the substring. ";
-    
+    public static final String msg = "Given the circumstances, I'm not sure if it was a success, but it certainly seems promising.";
+
     public static void main(String[] args) {
-        ArrayList<String> words = getParts(" ");
-
-        for(String s : words) {
-            System.out.println(s);
-        }
-
-        ArrayList<String> sentences = getParts(". ");
-
-        for(String s : sentences) {
-            System.out.println(s);
-            System.out.println("");
-            System.out.println("");
-        }
+        ArrayList<Integer> spacePositions = getDelimiterPosition(" ");
+        ArrayList<Integer> commaPositions = getDelimiterPosition(",");
+        ArrayList<Integer> itPositions = getDelimiterPosition("it");
     }
 
-    public static ArrayList<String> getParts(String delimeter) {
-        ArrayList<String> result = new ArrayList<String>();
+    public static ArrayList<Integer> getDelimiterPosition(String delim) {
+        ArrayList<Integer> results = new ArrayList<Integer>();
 
-        String msgCopy = message;
+        String msgCopy = msg;
+        int lastPos = 0;
         while(true) {
-            int nextDelim = msgCopy.indexOf(delimeter);
-            if(nextDelim == -1) {
-                break;
+            int pos = msgCopy.indexOf(delim);
+            if(pos < 0) {
+                break; 
             }
-            result.add(msgCopy.substring(0, nextDelim));
-            msgCopy = msgCopy.substring(nextDelim + delimeter.length());       
+            results.add(lastPos + pos);
+            msgCopy = msgCopy.substring(pos + delim.length());
+            System.out.println(msgCopy);
+            lastPos += pos + delim.length();
         }
 
-        return result;
+        for(Integer i : results) {
+            System.out.println(i);
+            if(msg.substring(i, i + delim.length()).equals(delim))
+                System.out.println("Correct");
+            else
+                System.out.println("Incorrect");
+            
+        }
+
+        return results;
     }
 }
