@@ -9,7 +9,7 @@ In programming, we can perform matrix operations by storing data inside a 2-Dime
 
     for(int i = 0; i < twoDArray.length; i++) {
         for(int j = 0; j < twoDArray[i].length; j++) {
-            twoDArray[i][j] = (i * 4) + (j + 1);
+            twoDArray[i][j] = (i * 3) + (j + 1);
             System.out.println(twoDArray[i][j]);
         }
     }
