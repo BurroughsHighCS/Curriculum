@@ -21,7 +21,7 @@ Every question on the exam will use this material in some way, shape, or form.
 
 ## April 30 - May 3 (Mon - Thur)
 ### Arrays and ArrayLists
-This is the longest review section, but I expect this to be the most frequent topic you encounter on the AP Exam. I think some of the following topics are less critical in this section.
+This is the longest review section, but I expect this to be the most frequent topic you encounter on the AP Exam. We use Arrays and Lists **all the time**.
 
 The concepts in this section will probably factor into **over 50%** of the exam's questions.
 
