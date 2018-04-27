@@ -5,6 +5,7 @@ In software development, **recursion** is the practice of having a function call
 
 ## Terminology
 * Sequential Execution
+* Infinite Recursion
 * Base Case
 
 ## Example
@@ -21,8 +22,8 @@ Look at this `int fibonacci(int n)` function, which returns the `nth` number in 
         else
             return fibonacci(n - 1) + fibonacci(n - 2);
     }
-
 ```
+
 The best way to work through recursive code is by picking a small input and tracing out the results by hand. Let's try this by tracing the above fibonacci code with an input of `n = 3`:
 
 1. `int result = fibonacci(3);`
@@ -81,4 +82,41 @@ That was a lot of work to calculate an easy fibonnaci number! But now that we wr
 If you try calculated `fibonacci(30)` using the recursive function above, you can see how this might be useful.
 
 ## Base Cases
-Our fibonacci 
+Imagine you tried to explain the fibonacci sequence to someone in english.
+
+You'd probably say something like "It's a sequence where every number in the sequence is the sum of the two numbers before it."
+
+Well what if we tried to write that description into a program carelessly? We might end up with something like this:
+
+```Java
+    public int fibonacci(int n) {
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+```
+
+With this, we're in big trouble. Our fibonacci function will look like the Pooh-bear comic up at the top. This `fibonacci` function will perform **infinite recursion** because we did not guarantee a **base case**.
+
+Let's look back at the correct code:
+
+```Java
+    public int fibonacci(int n) {
+        if(n == 1)
+            return 1;
+        else if(n == 0)
+            return 0;
+        else
+            return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+```
+
+The two if conditions before the final recursive call function as our **base cases**.
+
+To identify these, we need to look at **when we expect the recursion to terminate**. For values `n = 1` and `n = 0` we don't want to continue making recursive calls, because there is no such thing as a -1th or -2th value in the fibonacci sequence. Identifying base cases is similar to identifying boundaries in any loop.
+
+On the AP exam, you may be asked to identify why a recursive function call may or may not work. You should immediately check the function for base cases.
+
+A recursive function without a base case will always result in infinite recursion.
+
+## Practice Exercise
+
+[Exercise](./Exercise.md)
