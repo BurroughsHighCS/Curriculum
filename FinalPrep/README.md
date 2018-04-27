@@ -10,7 +10,7 @@ NOTES:
 * Work through all of the questions in each review _before_ you look at the answers.
 
 ## April 27-29 (F - Sun)
-### Introductory Java Language Features
+### Introductory Java Language Features (p. 67)
 This will review your knowledge of some of the basics. It will also explain in more detail some of the basics that we have barely discussed (like Javadoc comments). We have _used_ everything in this section, even if we haven't sat down and discussed it.
 
 Every question on the exam will use this material in some way, shape, or form.
@@ -20,7 +20,7 @@ Every question on the exam will use this material in some way, shape, or form.
 
 
 ## April 30 - May 3 (Mon - Thur)
-### Arrays and ArrayLists
+### Arrays and ArrayLists (p. 247)
 This is the longest review section, but I expect this to be the most frequent topic you encounter on the AP Exam. We use Arrays and Lists **all the time**.
 
 The concepts in this section will probably factor into **over 50%** of the exam's questions.
@@ -38,7 +38,7 @@ The concepts in this section will probably factor into **over 50%** of the exam'
 
 
 ## May 4 - May 6 (Fri - Sun)
-### Classes and Objects
+### Classes and Objects (p. 103)
 In a year-long class I would spend 3-4 weeks working on basic classes. We spent 2 days on it. Review this section. Make sure you understand how to answer the questions at the end.
 
 **Another 30-40%** of the questions on the exam will use material from this section in some way, shape, or form.
@@ -48,17 +48,20 @@ In a year-long class I would spend 3-4 weeks working on basic classes. We spent 
 
 
 ## May 7 - May 10 (Mon - Thur)
-### Inheritance and Polymorphism
+### Inheritance and Polymorphism (p. 143)
 Like basic classes, we would have spent considerably more time on these topics if we had more time. Normally I'd spend 1-2 weeks teaching the basics of these concepts, and have you code a 2-3 week large project the really drive them home. That's 4-5 weeks of content and practice; We spent 1 day learning this and another 2 reviewing it.
 
 Expect roughly 15-25% of the test to use this information. 
+
+* Reading: p.143 - p.163
+* Multiple Choice Review Questions (& Answers): p.164 - p.187
 
 ## May 11 - May 14 (Fri - Mon)
 This last leg before the exam you should try to review **two** sections. The first one should be pretty quick, so move through it quickly to have a chance to review recursion at the end. 
 
 If you have to skip one of these, skip Recursion. Recursion is great if it makes sense to you. And I expect there to be maybe 3-6 questions (4-8%) that involve Recursion, but a stronger understanding of the standard classes will benefit you on MOST of the questions.
 
-### Some Standard Classes
+### Some Standard Classes (p. 194)
 These should be pretty basic. We have used all of the content here a lot over the semester, but it is helpful to review them now that you should understand classes better.
 
 * `String` is a class you will use on **more than 50%** of the exam questions. 
@@ -75,7 +78,7 @@ Many questions on the test will rely on your understanding of these standard cla
 * Reading: p.188 - p.199
 * Multiple Choice Review Questions (& Answers): p.200 - p.220
 
-### Recursion
+### Recursion (p. 306)
 Recursion is really cool, but can be tricky to learn. The best way to learn recursion is honestly just to do several practice questions until it finally clicks. Fit this in if I can, because there will almost definitely be a few questions that use it.
 
 Additionally, understanding recursion will make you inherently better at tracing code execution order, which will make you better at detecting expected outputs without having to run code.
