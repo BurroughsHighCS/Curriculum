@@ -1,3 +1,5 @@
+NOTE: Page 378 of your AP Prep Book has an excellent summary of the skills you should focus on in your AP prep.
+
 # Wrap-up prep work
 In class we've covered nearly everything we can afford to cover at some level. We have touched on nearly 90% of the material that can appear on the exam in some way, shape or form.
 
