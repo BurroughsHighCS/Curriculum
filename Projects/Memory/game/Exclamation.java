@@ -1,16 +1,16 @@
 package game;
 
-public class Star extends MemoryPiece {
+public class Exclamation extends MemoryPiece {
     public void render() {
         if(!this.isRevealed()) {
             super.render();
         }
         else {
-            System.out.print(" * ")
+            System.out.print(" ! ")
         }
     }
 
     public String getShapeType() {
-        return "Star";
+        return "Exclamation";
     }
 }
