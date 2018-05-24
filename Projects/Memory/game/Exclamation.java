@@ -3,14 +3,18 @@ package game;
 public class Exclamation extends MemoryPiece {
     public void render() {
         if(!this.isRevealed()) {
-            super.render();
+            System.out.print("[-]");
         }
         else {
-            System.out.print(" ! ")
+            System.out.print(" ! ");
         }
     }
 
     public String getShapeType() {
         return "Exclamation";
+    }
+
+    public MemoryPiece getCopy() {
+        return new Exclamation();
     }
 }

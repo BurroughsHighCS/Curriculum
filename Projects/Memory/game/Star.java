@@ -3,14 +3,18 @@ package game;
 public class Star extends MemoryPiece {
     public void render() {
         if(!this.isRevealed()) {
-            super.render();
+            System.out.print("[-]");
         }
         else {
-            System.out.print(" * ")
+            System.out.print(" * ");
         }
     }
 
     public String getShapeType() {
         return "Star";
+    }
+
+    public MemoryPiece getCopy() {
+        return new Star();
     }
 }

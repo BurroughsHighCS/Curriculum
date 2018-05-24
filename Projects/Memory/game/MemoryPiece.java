@@ -4,7 +4,7 @@ public abstract class MemoryPiece {
     private boolean revealed;
 
     public MemoryPiece() {
-        this.revealed = false;
+        this.revealed = true;
     }
 
     public boolean isRevealed() {
@@ -19,9 +19,15 @@ public abstract class MemoryPiece {
         this.revealed = false;
     }
 
-    public void render() {
-        System.out.print("[-]")
+    public boolean sameAs(MemoryPiece other) {
+        if(this.getShapeType().equals(other.getShapeType()))
+            return true;
+        
+        return false;
     }
 
     public abstract String getShapeType();
+    public abstract MemoryPiece getCopy();
+    public abstract void render();
+
 }
