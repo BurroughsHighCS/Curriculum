@@ -21,30 +21,26 @@ I am unable to give you a grade that factors into your GPA this semester. Consid
 
 Your primary motivator this semester should be to pass the AP Exam. Should you pass the exam with a 3 or higher, most universities will grant you full credit for having completed their entry level Computer Science course. This will save you both time and money in college.
 
-I will treat the coursework as I would if I were teaching a normal class. Your assignments will be graded. You will have deadlines and late penalties.
+You will need to complete every assignment and every project if you wish to learn the material. For most assignments, the time in class will be sufficient. For some of you, this will NOT be the case on some of the projects. Time to complete projects often varies by student, and I cannot budget too many days of class to any given project.
 
-Additionally, we will use a "currency" known as BCSCoins (Burroughs Computer Science Coins). These will be an in-class currency (Not a full blown cryptocurrency) I will award to you based on your performance on assignments and projects. Sometime during the semester, I hope to work with some STEM-focused non-profits in Ridgecrest to make these coins redeemable for real rewards, such as Amazon gift cards.
+### Workload
 
-Note that BCSCoins are not guaranteed, or even planned, for future semesters. Please do not go telling your friends that they can redeem class coins for real rewards if they take the course in future semesters.
-
-### Assignments and Grade Distribution
-
-#### Projects (58 Coins Possible)
+#### Projects
 Projects will consist of more comprehensive practices in programming spanning 1 or more weeks to help you internalize the skills you learn from other assignments. Computer Science is a skill that requires many hours of labor at your keyboard trying to learn how to work in digital memory.
 
-All Projects will be graded for all-or-nothing credit. Each assignment will be penalized 1 coin for every 2 days it's late, up to 50% of the possible coins rounded down. Group work is prohibited on all projects unless otherwise stated. Students caught submitting the work of another student will receive no credit for assignments in violation of this policy.
+All Projects will be graded for all-or-nothing credit. Group work is prohibited on all projects unless otherwise stated.
 
 Projects and grades listed below are subject to change, but tentatively our big projects will be as follows:
 
-* Plinko Game (10 coins)
-* Loan Calculator (5 coins)
-* Loan Calculator++ (5 coins)
-* TBD Count, Sort, Search, Manipulate Project (12 coins)
-* TBD Classes Project (12 coins)
-* TBD Unit Tests Project (8 coins)
-* Fibonacci (6 coins)
+* Loan Calculator
+* Plinko Game
+* TBD String Manipulation Project
+* TBD Classes Project
+* TBD Count, Sort, Search, Manipulate Project (Possibly)
+* Fibonacci
+* Loan Calculator++ (Possibly)
 
-#### Assignments (36 Coins Possible)
+#### Assignments
 Assignments will range from simple skill practice to learning concepts and techniques that will be critical to success in the above projects.
 
 Each assignment will be worth 2 Coins and will be graded as an all-or-nothing grade. Assignments have no late penalties.
@@ -52,57 +48,45 @@ Each assignment will be worth 2 Coins and will be graded as an all-or-nothing gr
 The order and details of the assignments listed below are subject to change:
 
 * Terminal Commands (Hello World)
-* Manual Code Output
 * Git Commands
-* Iteration
+* Operators
+* Data Types
 * Variable Scoping
-* Nested Functions
-* Binary
-* Memory
-* Sorting
-* Class Diagram
+* Binary & Base n Number Systems
+* Arrays
+* Loops
+* 2D Arrays
+* Functions
+* Multi-Class Intro
 * Inheritance
+* Class Diagram
 * Public/Private Inheritance
-* Boundary Case Identification
-* Unit Test Cases
-* Ethics
+* Sorting
+* Recursion
 * TBD Assignment
 * TBD Assignment
 * TBD Assignment
 
-#### Practice Exams / Midterms (18 Coins Possible)
-We will do three practice AP exams. All of them will consist of two parts: Multiple Choice and Free Response.
+#### Practice Exams / Midterms
+We will do at least three practice AP exams. All of them will consist of two parts: Multiple Choice and Free Response.
 
-One will happen in Early March, and two more right before the AP exam. Each of these will be worth 6 coins.
-
-#### Final Grade
-Note that there are 112 total coins possible. 100 coins will be considered a 90% grade in the class, so each coin is worth .9% of your final grade.
-
-Assuming I can get coin redemption working, expect each 25 coins to be worth a $5 reward, with up to 100 coins redeemable per student. Coins will probably _only_ be redeemable in 25 coin increments (so 99 coins will only redeem for 75 coins worth).
-
-BCSCoins are a non-tradable currency.
+One will happen around March, and two more right before the AP exam.
 
 ## Policies
-### Late Work
-Projects and assignments can both be turned in at any time before the AP exam. Projects will suffer a late penalty of 1 coin for every 2 days they are late. Assignments will have no late penalty.
-
-Practice Exams can be made up for 60% credit, but only on your own time.
 
 ### Cheating
-Cheating consists of copying work done by another student. Students are not allowed to borrow code in any amount from other students on projects. All projects are considered individual work, and each individual student must find their way to solutions by themselves. If you need help with a project, email me or come to my open office hours. I will gladly help you through problems, or point you to resources which will help you through these problems.
-
-Assuming that we pay for any students' AP exams, we will not pay for the exam for any student who is found cheating on any project.
+Cheating consists of copying work done by another student. Students are not allowed to borrow code in any amount from other students on projects. All projects are considered individual work, and each individual student must find their way to solutions by themselves. If you need help with a project, email me or stay late Wednesday mornings. I will gladly help you through problems, or point you to resources which will help you through these problems.
 
 While assignments are open to group work, please do not copy the work of others. Assignments suspected of copying will be reviewed with students in question, and their scores will potentially be invalidated as well.
 
 ### Inappropriate Behavior
-In addition to the existing school policies, any student exhibiting inappropriate behavior in class is subject to immediate coin deductions based on the severity of the infraction.
+In addition to the existing school policies, any student exhibiting inappropriate behavior in class is subject disciplinary action.
 
 I will tolerate no sexually inappropriate, offensive, or discriminatory behavior of any kind in my classroom.
 
 Do not attempt to "hack" or otherwise abuse our school machines.
 
-Additionally, I will deduct coins and invalidate assignment scores from students who abuse their digital footprint by:
+Additionally, I will watch for students who abuse their digital footprint by:
 * Submitting code with inappropriate variable names or otherwise inappropriate content.
 * Posting inappropriate content of any kind to github.
 * Exhibiting behaviors deemed otherwise inappropriate online.
