@@ -25,7 +25,7 @@ This one is the most important. We need the JDK in order to compile and run our 
 
 2. Once Java is installed, you will need to add it to your Operating System's PATH, otherwise you'll have to type all of your commands with absolute paths, like
     ```
-    C:/Program\ Files\ \\(x86\\)/Java/jdk1.8.0_161/bin/javac Hello.java
+    "C:/Program Files (x86)/Java/jdk1.8.0_161/bin/javac" Hello.java
     ```
     Instead of
     ```
@@ -52,4 +52,4 @@ If these steps are hard, don't beat yourself up. Oftentimes, writing your code i
 ## Miscellaneous
 Absolute path to the JDK on school Windows machines:
 
-C:/Program\ Files\ \\(x86\\)/Java/jdk1.8.0_161/bin/YOURCOMMAND
+"C:/Program Files (x86)/Java/jdk1.8.0_161/bin/YOURCOMMAND"
