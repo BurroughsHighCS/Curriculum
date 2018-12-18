@@ -123,59 +123,43 @@ Because we've extracted ```isEven``` into a function, we can use it for any inte
 Remember that our function declared its parameter as ```int x```, but we passed it a bunch of integers with different variable names. This is another strength of writing functions. No matter what you name the variable, once you pass it to the function, the function considers it ```x``` within its own **scope**. We will talk more about variable scope in a later assignment, but for now understand that functions can use whatever name they want for their parameters.
 
 ## Exercise
-We're working toward our first big project, a loan calculator. In our loan calculator, we will need to be able to accept inputs from users. This comes with a number of possible problems, as users frequently mistype inputs or misunderstand desired input formats. The practice of cleaning, validating, and parsing user inputs is a pretty big topic that we won't dive too deep into, but we can at least write a **Utility Class** that does some basic input validation for us. Look at the below ```ValidationUtils``` class with an example String input validator function ```isValidString```
+To wrap up the basics, we will spend a significant chunk of time working on the following stubbed class for a `CruiseControl` program.
 
 ```java
-import java.util.Scanner;
+class CruiseControl {
+    static Boolean cruiseControlSet = false;
+    static int speed = 0;
+    static final int MAX_SPEED = 45;
+    static int warningSpeed = 25;
 
-class ValidationUtils {
-    public static void main(String args[]) {
-        System.out.print("Enter a string: ");
-        Scanner scan = new Scanner(System.in);
-        if(isValidString(scan)) {
-            System.out.println("String Success!");
-        }
-        else {
-            System.out.println("String Failure!");
-        }
+    public static void main(String[] args) {
+
     }
 
-    
-    public static Boolean isValidString(Scanner scan) {
-        try {
-            String s = scan.nextLine();
-        }
-        catch(Exception e) {
-            return false; //An error was raised. The user input could not be read as a String.
-        }
-        return true; //No error was raised. The scanner read it successfully as a String.
+    public static void toggleCruiseControl() {
+
+    }
+
+    public static void incrementSpeed() {
+
+    }
+
+    public static void decrementSpeed() {
+
+    }
+
+    public static void reportSpeed() {
+
+    }
+
+    public static void alert(Boolean isDecelerating) {
+
+    }
+
+    public static Boolean exceedsWarningThreshold(int speed) {
+
     }
 }
 ```
 
-You can feel free to copy this code as your starting point. From here, I want you to write similar validator functions for the three remaining data types: ```int```, ```double```, and ```Boolean```. The main function of your ValidationUtils class should do ALL of the following:
-* Prompt the user to enter a string, then print whether the value provided was a valid string or not.
-* Prompt the user to enter a int, then print whether the value provided was a valid int or not.
-* Prompt the user to enter a double, then print whether the value provided was a valid double or not.
-* Prompt the user to enter a boolean, then print whether the value provided was a valid boolean or not.
-
-
-Some tips:
-
-* Information about scanners can be found here: [Scanners](https://docs.oracle.com/javase/7/docs/api/java/util/Scanner.html)
-* Information about try/catch statements can be found here: [Try/Catch](https://beginnersbook.com/2013/04/try-catch-in-java/)
-* The Scanner class has a ```nextInt()``` function and a ```nextDouble()``` function that work similarly to the ```nextLine()``` function from my demo code.
-* For the boolean validator, the user should be able to enter "t", "f", "T", "F", "true", "True", "false", "False";
-* The ```==``` operator actually doesn't work for Strings the way you expect it to, so:
-    
-```java
-    String s = scan.nextLine();
-    return s == "t";
-```
-    
-Will not work. You will need to call the string's ```Equals(String str)``` function.
-    
-```java
-    String s = scan.nextLine();
-    return s.equals("t");
-```
+We will build out the various functions of this program in class.
