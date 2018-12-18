@@ -70,6 +70,4 @@ class CruiseControl {
     System.out.println("Your speed:\t\t" + speed + "mph");
     System.out.println("Warning Threshold:\t" + warningSpeed + "mph");
   }
-
-
 }
