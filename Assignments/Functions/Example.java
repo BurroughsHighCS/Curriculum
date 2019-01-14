@@ -4,10 +4,16 @@ class Example {
 	static String message = "Hi";
 
 	public static void main (String[] args) {
-		int age = calcAge(year, birthYear);
-		printMessage("My age is: " + age);
+		// int age = calcAge(year, birthYear);
+		// printMessage("My age is: " + age);
 
-		printMessage("My class message is: " + message);
+		// printMessage("My class message is: " + message);
+		printMessage("" + (int)(Math.random() * 6));
+		printMessage("" + (int)(Math.random() * 6));
+		printMessage("" + (int)(Math.random() * 6));
+		printMessage("" + (int)(Math.random() * 6));
+		printMessage("" + (int)(Math.random() * 6));
+		printMessage("" + (int)(Math.random() * 6));
 	}
 
 	public static int calcAge (int currentYear, int birthYear) {
