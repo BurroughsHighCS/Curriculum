@@ -1,4 +1,4 @@
-#Random Numbers Assignment
+# Random Numbers Assignment
 
 1. Make a `DiceGame` class file.
 2. Write a `getD4` function. It should:
