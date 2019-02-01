@@ -33,6 +33,8 @@ class Plinko {
                 } else {
                     continue;
                 }
+            } else {
+                continue;
             }
 
             collectSettings(isMultiDisc);
@@ -41,7 +43,7 @@ class Plinko {
     }
 
     public static void runPlinko(Boolean isMultiDisc) {
-
+        
     }
 
     public static void printOddRow(int discPosition) {
