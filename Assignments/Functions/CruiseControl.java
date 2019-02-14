@@ -13,8 +13,41 @@ class CruiseControl {
 
 	}
 
-	public static void accelerate() {
+	public static void accelerate(int accelerateSpeed) {
+		if() {
+			if(speed <= MAX_SPEED) {
+				//should accelerate
+				speed += accelerateSpeed;
+				if(speed > MAX_SPEED) {
+					speed = MAX_SPEED;
+				}
+			} else {
+				System.out.println("Max speed reached.");
+			}
+		} else {
+			System.out.println("Turn on Cruise Control first !!!") ;			
+		}
 
+
+		if (cruiseControlSet && speed <= MAX_SPEED) {
+			//should accelerate
+			speed += accelerateSpeed;
+			if(speed > MAX_SPEED) {
+				speed = MAX_SPEED;
+			}
+		}
+		else if (!cruiseControlSet) {
+			System.out.println("Turn on Cruise Control first !!!") ;
+		}
+		else {
+			System.out.println("Max speed reached.");
+		}
+
+		System.out.println("Current speed: \t" + speed + "mph");
+
+		if(exceedsWarningThreshold(speed)) {
+			alert(false);
+		}
 	}
 
 	public static void decelerate() {
