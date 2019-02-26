@@ -26,6 +26,6 @@ We have worked a lot with the `String` data type, but there are a lot of functio
 * Substrings
     * `String substring(int from, int to)`
         * Returns the substring beginning at `from` and ending at `to-1`.
-        * WARNING: Up until now I had been teaching the `substring` function WRONG. I said the second paramater is how many spaces it should go _forward_ from the starting index, but that's incorrect. The second parameter **is the desired _end_ index of your substring - 1**.
+        * Given the string `String s = "Hello"`, s.substring(1,3) will return a string only two characters: `"el"` 
     * `String substring(int from)`
         * Returns `substring(from, length())`
