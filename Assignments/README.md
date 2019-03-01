@@ -12,8 +12,8 @@
 9. * [Collecting User Input](./UserInput)
 10. [Iterating Over Data](./IteratingData) 
 11. [Lists](./Lists) 
-12. [Recursion](./Recursion)
 13. [Lifetime of Data](./Scope) 
+12. [Recursion](./Recursion)
 14. [String Decomposition](./StringDecomposition) 
 15. [2 Dimensional Arrays](./2DArrays)
 16. Classes1
