@@ -4,16 +4,16 @@ Oftentimes, we factor utility functions out into classes called *static classes*
 That last part probably sounds a little like gibberish, but that's okay. As we continue talking about classes, you will start to see what **static access** means, and why it is significant.
 
 ## Utility Classes
-In the `utils` folder here, you will find two utility classes: `MatrixUtil.java` and `SentenceUtil.java`.
+In the `utils` folder here, you will find two utility classes: `MatrixUtil.java` and `StaticSentenceMaker.java`.
 
-SentenceUtil:
+StaticSentenceMaker:
 
 ```Java
 package utils;
 
 import java.util.ArrayList;
 
-public class SentenceUtil {
+public class StaticSentenceMaker {
     private static String[] subjects = {"I", "He", "She", "That guy", "Whatshername", "The dog"};
     private static String[] objects = {"the dog", "a ball", "my keyboard", "a door", "the desk"};
     private static String[] verbs = {"kicked", "bought", "ran into", "fell off of", "tried to jump across"};
@@ -56,27 +56,27 @@ If you look at the `Example.java` file in this folder, you will see a `sentenceE
 
 ```Java
     public static void sentenceExample() {
-        String sentence = SentenceUtil.generateSentence();
+        String sentence = StaticSentenceMaker.generateSentence();
         System.out.println(sentence);
     }
 ```
 
-The only function it calls from the `SentenceUtil` class is `generateSentence()`. If you look back up at the `SentenceUtil` static class, you will see that `generateSentence()` is the only `public` function in the entire class.
+The only function it calls from the `StaticSentenceMaker` class is `generateSentence()`. If you look back up at the `StaticSentenceMaker` static class, you will see that `generateSentence()` is the only `public` function in the entire class.
 
 Because everything else is `private`, we can't access it from outside the class.
 
 ```Java
     public static void sentenceExample() {
         //All of these fail
-        String s1 = SentenceUtil.getRandomSubject();
-        String s2 = SentenceUtil.getRandomVerb();
-        String s3 = SentenceUtil.getRandomObject();
+        String s1 = StaticSentenceMaker.getRandomSubject();
+        String s2 = StaticSentenceMaker.getRandomVerb();
+        String s3 = StaticSentenceMaker.getRandomObject();
     }
 ```
 
 Even though the return type is correct and the function is written correctly, we are unable to call a class's private functions from outside the class.
 
-However, if you look at the `generateSentence()` function inside the `SentenceUtil` class, it calls those functions just fine:
+However, if you look at the `generateSentence()` function inside the `StaticSentenceMaker` class, it calls those functions just fine:
 
 ```Java
     public static String generateSentence() {
@@ -89,7 +89,7 @@ However, if you look at the `generateSentence()` function inside the `SentenceUt
     }
 ```
 
-When we write code that is necessary to make a class function, but we don't want that code to be used outside of its intended purpose, we label it as `private`. If we decide that we want the `SentenceUtil` class to be able to return random subjects, objects, and verbs to other classes, however, we could easily relabel those functions as `public` to open them up.
+When we write code that is necessary to make a class function, but we don't want that code to be used outside of its intended purpose, we label it as `private`. If we decide that we want the `StaticSentenceMaker` class to be able to return random subjects, objects, and verbs to other classes, however, we could easily relabel those functions as `public` to open them up.
 
 ### Single Responsibility Design
 We could have easily written all of our utility functions inside of a single class. There's no reason why we _need_ to move the random sentence generator into its own class. If we copy paste that code into our `Example` class and make some minor modifications to fix syntax, it would be easy to get it all in one place.
@@ -118,7 +118,7 @@ Similarly, when we write our own custom classes, we need to import them. In this
 ```Java
 package utils;
 
-public class SentenceUtil {
+public class StaticSentenceMaker {
     //...
 }
 ```
@@ -133,7 +133,7 @@ class Example {
 }
 ```
 
-In this case, we import `utils.*`, which means "import _everything_ in the utils package". We could have just imported the SentenceUtil class if that was all we needed: `import utils.SentenceUtil`.
+In this case, we import `utils.*`, which means "import _everything_ in the utils package". We could have just imported the StaticSentenceMaker class if that was all we needed: `import utils.StaticSentenceMaker`.
 
 ## Exercises
 

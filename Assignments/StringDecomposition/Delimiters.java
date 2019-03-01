@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-class StringDecomp {
+class Delimiters {
     public static final String msg = "Given the circumstances, I'm not sure if it was a success, but it certainly seems promising.";
 
     public static void main(String[] args) {

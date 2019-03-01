@@ -6,7 +6,7 @@ class Example {
     }
 
     public static void sentenceExample() {
-        String sentence = SentenceUtil.generateSentence();
+        String sentence = StaticSentenceMaker.generateSentence();
         System.out.println(sentence);
     }
 
