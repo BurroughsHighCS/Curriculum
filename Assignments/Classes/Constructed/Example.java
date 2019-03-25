@@ -1,23 +1,31 @@
-import school.*;
+import util.ConstructedSentenceMaker;
 
-import java.util.ArrayList;
-
-public class Example {
+class Example {
     public static void main(String[] args) {
-        ArrayList<Grade> gradesDB = GradesData.getGradesData();
+        sentenceExample();
+    }
 
-        Student[] students = new Student[10];
-        for(int i = 1; i <= 10; i++) {
-            students[i-1] = new Student(i);
-        }
+    public static void sentenceExample() {
+		ConstructedSentenceMaker defaultMaker = new ConstructedSentenceMaker();
 
-        for(Grade g : gradesDB) {
-            
-            students[g.getStudentId() - 1].addGrade(g);
-        }
+		String[] subjects = {};
+		String[] verbs = {};
+		String[] objects = {"a different cat", "the dumb dog", "a puny human", "some box", "a rickety piano"};
+		ConstructedSentenceMaker customMaker = new ConstructedSentenceMaker(subjects, verbs, objects);
 
-        for(Student s : students) {
-            System.out.println(s.getFullName() + " : " + s.getGPA());
-        }
+        System.out.println("Maker 1:");
+		System.out.println(defaultMaker.generateSentence());
+		System.out.println(defaultMaker.generateSentence());
+		System.out.println(defaultMaker.generateSentence());
+		System.out.println(defaultMaker.generateSentence());
+		System.out.println(defaultMaker.generateSentence());
+
+		System.out.println("\nMaker 2:");
+		System.out.println(customMaker.generateSentence());
+		System.out.println(customMaker.generateSentence());
+		System.out.println(customMaker.generateSentence());
+		System.out.println(customMaker.generateSentence());
+		System.out.println(customMaker.generateSentence());
+
     }
 }

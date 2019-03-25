@@ -1,4 +1,4 @@
-package utils;
+package util;
 
 public class StaticSentenceMaker {
     private static String[] subjects = {"I", "He", "She", "That guy", "Whatshername", "The dog"};

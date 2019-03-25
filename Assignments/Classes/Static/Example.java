@@ -1,4 +1,4 @@
-import utils.*;
+import util.StaticSentenceMaker;
 
 class Example {
     public static void main(String[] args) {
@@ -6,8 +6,7 @@ class Example {
     }
 
     public static void sentenceExample() {
-        String sentence = StaticSentenceMaker.generateSentence();
-        System.out.println(sentence);
+        String subject = StaticSentenceMaker.generateSentence();
+        System.out.println(subject);
     }
-
 }
