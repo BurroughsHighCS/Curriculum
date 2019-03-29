@@ -16,8 +16,6 @@
 12. [Recursion](./Recursion)
 14. [String Decomposition](./StringDecomposition) 
 15. [2 Dimensional Arrays](./2DArrays)
-16. Classes1
-17. Classes2
-18. Classes3
-19. Search & Sort1
-20. Search & Sort2
+16. [Static Classes](./Classes/Static)
+16. [Constructed Classes](./Classes/Constructed)
+18. [Tournament Mini-Project](./Classes/Tournament)
