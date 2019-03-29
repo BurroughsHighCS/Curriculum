@@ -2,7 +2,7 @@
 public class BasicsReference {
 	public static void main(String[] args) {
 		//Declare a String
-		String message = "Hello";1
+		String message = "Hello";
 		//Print the string
 		System.out.println(message);
 		//Reassign that String
