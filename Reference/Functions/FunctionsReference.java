@@ -1,4 +1,4 @@
-public class Reference {
+public class FunctionsReference {
 	// Declare Class-wide properties
 	public static String greeting = "Hello";
 
