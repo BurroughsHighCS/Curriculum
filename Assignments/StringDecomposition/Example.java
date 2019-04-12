@@ -1,31 +1,15 @@
-class Example {
+import utils.Sentence;
+import java.util.List;
+import java.util.ArrayList;
+
+public class Example {
+    public static String msg = "Given the circumstances, I'm not sure if it was a success, but it certainly seems promising.";
+
 	public static void main(String[] args) {
-		int n = power(2,3);
-		System.out.println(n);
+		Sentence sen = new Sentence(msg);
 
-
-	}
-
-	public static Boolean isEven(int x) {
-		return x % 2 == 0;
-	}
-
-	//2, 4
-	public static double power(int num, int exponent) {
-		if(exponent < 0) {
-			return -1;
+		for(String word : sen.getWords()) {
+			System.out.println(word);
 		}
-		else if(exponent = 0){
-			return 1;
-		}
-
-
-		int base = num;
-		for(int i = 1; i < exponent; i++) {
-			num *= base;
-		}
-		return (double) num;
-
 	}
-
 }
