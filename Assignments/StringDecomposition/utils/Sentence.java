@@ -34,7 +34,19 @@ public class Sentence {
 	}
 
 	public String[] getWords() {
-
+        String[] s = new String[countWords()];
+        if(countWords() == 1){
+            s[0] = sentence;
+            return s;
+        }
+        int from = 0;
+        int to = getBlankPositions()[0];
+        for(int i = 0; i < countWords(); i++){
+            s[i] = sentence.substring(from, to);
+            from = (to + 1);
+            to = getBlankPositions()[(i+1)];
+        }
+        return s;
 	}
 }
 
