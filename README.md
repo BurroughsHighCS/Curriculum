@@ -92,7 +92,7 @@ Additionally, I will watch for students who abuse their digital footprint by:
 * Exhibiting behaviors deemed otherwise inappropriate online.
 
 
-##Contact Information
+## Contact Information
 If you need to reach me, the best way to do so is at my Navy email address:
 Curtis.merrell@navy.mil
 
