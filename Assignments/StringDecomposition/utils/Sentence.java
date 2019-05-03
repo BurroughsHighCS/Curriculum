@@ -18,7 +18,7 @@ public class Sentence {
 			//[0] substring to be found;
 			//[1] starting idx (search from this idx)
 			int n = sentence.indexOf(" ", idx);
-			if(n == -1) {
+			if(n < 0) {
 				break;
 			}
 			blanks.add(n);
@@ -34,7 +34,25 @@ public class Sentence {
 	}
 
 	public String[] getWords() {
+		//Get size. Init Array.
+		int size = this.countWords();
+        String[] results = new String[size];
 
+		//Store blank positions.
+		List<Integer> blanks = this.getBlankPositions();
+
+        int fromIdx = 0;
+		for(int i = 0; i < size; i++){
+			if(i < blanks.size()) {
+				int toIdx = blanks.get(i);
+				results[i] = sentence.substring(fromIdx, toIdx);
+	            fromIdx = (toIdx + 1);
+			}
+			else {
+				results[i] = sentence.substring(fromIdx);
+			}
+        }
+        return results;
 	}
 }
 
