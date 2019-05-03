@@ -35,7 +35,6 @@ Projects and grades listed below are subject to change, but tentatively our big 
 * Loan Calculator
 * Plinko Game
 * Tournament Classes Project
-* TBD Count, Sort, Search, Manipulate Project (Possibly)
 * Fibonacci
 * Loan Calculator++ (Possibly)
 
@@ -62,9 +61,7 @@ The order and details of the assignments listed below are subject to change:
 * Public/Private Inheritance
 * Sorting
 * Recursion
-* TBD Assignment
-* TBD Assignment
-* TBD Assignment
+* 1-5 More Assignments TBD as required
 
 #### Practice Exams / Midterms
 We will do at least three practice AP exams. All of them will consist of two parts: Multiple Choice and Free Response.
