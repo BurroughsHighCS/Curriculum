@@ -26,7 +26,7 @@ You will need to complete every assignment and every project if you wish to lear
 ### Workload
 
 #### Projects
-Projects will consist of more comprehensive practices in programming spanning 1 or more weeks to help you internalize the skills you learn from other assignments. Computer Science is a skill that requires many hours of labor at your keyboard trying to learn how to work in digital memory.
+Projects will consist of more comprehensive practices in programming spanning 1 or more weeks to help you internalize the skills you learn from other assignments. Computer Science is a skill that requires many hours of labor at your keyboard trying to learn how to work in digital memory. Because of the nature of grading in our class, We will be unable to do these projects to quite the level of rigor that we should, and we will not do nearly as many as we should.
 
 All Projects will be graded for all-or-nothing credit. Group work is prohibited on all projects unless otherwise stated.
 
@@ -34,8 +34,7 @@ Projects and grades listed below are subject to change, but tentatively our big 
 
 * Loan Calculator
 * Plinko Game
-* TBD String Manipulation Project
-* TBD Classes Project
+* Tournament Classes Project
 * TBD Count, Sort, Search, Manipulate Project (Possibly)
 * Fibonacci
 * Loan Calculator++ (Possibly)
