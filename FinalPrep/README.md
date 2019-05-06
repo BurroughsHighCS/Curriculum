@@ -34,7 +34,7 @@ The concepts in this section will probably factor into **over 50%** of the exam'
         * Auto-Boxing and -Unboxing (p. 257)
             * RESUME reading at The List<E> Interface (p. 257)
     * All headers in the section:
-        * Collections and Interators (p. 261 - p. 263)
+        * Collections and Iterators (p. 261 - p. 263)
             * RESUME reading at Two Dimensional Arrays (p. 264)
 * Multiple Choice Review Questions (& Answers): p.270 - p.305
 
